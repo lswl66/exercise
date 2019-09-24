@@ -25,7 +25,7 @@
                 display: inline-block;
             } */
             li{
-                padding-left: 25px;
+                padding-right: 25px;
                 cursor: pointer;
             }
             li:hover{
@@ -33,7 +33,7 @@
             }
             .menu-son{
                 position:relative;
-                left: 100px;
+                /* left: 100px; */
                 width: 1166px;
                 margin: 0 auto;
                 display: flex; 
@@ -43,6 +43,21 @@
             }
             .menu-son ul li{
                 display: inline-block;
+            }
+            .menu-son ul li span{
+                display: inline-block;
+                font-size: 12px;
+                width: 29px;
+                text-align: center;
+                line-height: 16px;
+                position: relative;
+                top: -13px;
+                right: 5px;
+                color: #fff;
+                padding-bottom: 2px;
+                background: #FF7452;
+                border-radius: 9px;
+                /* border: 5px solid #FF7452; */
             }
             .menu-son div {
                 flex: 1;
@@ -81,6 +96,60 @@
                 font-size: 14px;
                 color: #fff;
             }
+            .login_verify{
+                display: inline-block;
+                float: right;
+                border:0px;
+                position: relative;
+                top: 42.5px;
+                right: 65.5px;
+            }
+            .login_phone{
+                display: inline-block;
+                width: 182px;
+            }
+            .login_phone .phone_number{
+                width: 163px;
+                height: 35px;
+                padding-left: 10px;
+                font-size: 14px;
+                line-height: 35px;
+                color: #333;
+                box-sizing: border-box;
+            }
+            .login_captcha{
+                width: 152px;
+                display: inline-block;
+                background: #fff;
+            }
+            .login_captcha .captcha{
+                width: 84px;
+                height: 31px;
+                padding-left: 10px;
+                line-height: 31px;
+                border: 0px;
+            }
+            .get_captcha{
+                border: 0px;
+                width: 52px;
+                height:33px;
+                background: #fff;
+                color: #00b38a;
+                cursor: pointer;
+            }
+            .login_register{
+                padding-left: 5px;
+                display: inline-block;
+            }
+            .login_register button{
+                text-align: center;
+                border: 1px solid #fff;
+                opacity: 0.9;
+                width:107px;
+                height: 35px;
+                background: #00b38a;
+                color: #fff;
+            }
             .search {
                 background: #F2F5F4;
                 height:132px;
@@ -101,7 +170,9 @@
                     <ul>
                         <li>首页</li>
                         <li>公司</li>
-                        <li>校园招聘</li>
+                        <li>校园招聘
+                            <span>new</span>
+                        </li>
                         <li>言职</li>
                         <li>课程</li>
                     </ul>
@@ -117,8 +188,21 @@
                     <img src="https://www.lgstatic.com/www/static/index/modules/un_login_banner/img/text_ae1d842.png"/>
                     <p>82894438家公司 | 6379998个职位，在拉勾等你</p>
                 </div>
+                <div class="login_verify">
+                    <div class="login_phone">
+                        <input type="text" name="phone_number" value="输入手机号" class="phone_number"/>
+                    </div>
+                    <div class="login_captcha">
+                        <input type="text" name="captcha" value="验证码" class="captcha"/>
+                        <button type="submit" class="get_captcha">获取</button>
+                    </div>
+                    <div class="login_register">
+                        <button>登录/注册</button>
+                    </div>
+                </div>
             </div>
-            <div class="search"></div>
+            <div class="search">
+            </div>
             <div class="main"></div>
         </div>
     </body>
