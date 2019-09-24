@@ -24,7 +24,7 @@
             /* .b div,p,li,ul{
                 display: inline-block;
             } */
-            li{
+            .menu li{
                 padding-right: 25px;
                 cursor: pointer;
             }
@@ -50,9 +50,9 @@
                 width: 29px;
                 text-align: center;
                 line-height: 16px;
-                position: relative;
-                top: -13px;
-                right: 5px;
+                position: absolute;
+                top: 3px;
+                left: 390px;
                 color: #fff;
                 padding-bottom: 2px;
                 background: #FF7452;
@@ -136,12 +136,17 @@
                 background: #fff;
                 color: #00b38a;
                 cursor: pointer;
+                position: absolute;
+                z-index: 100;
+                left: 287px;
+                top: 2px;
             }
             .login_register{
                 padding-left: 5px;
                 display: inline-block;
             }
             .login_register button{
+                cursor: pointer;
                 text-align: center;
                 border: 1px solid #fff;
                 opacity: 0.9;
@@ -150,9 +155,58 @@
                 background: #00b38a;
                 color: #fff;
             }
-            .search {
+            .search{
                 background: #F2F5F4;
                 height:132px;
+            }
+            .search_about{           
+                width: 954px;  
+                display: block;
+                position: relative;
+                left:206px;
+                top:29px;
+            }
+            .search_box{
+                /* display: block; */
+                height: 44px;
+                line-height: 44px;
+                text-align: left;
+                padding-left: 12px;
+                border: 1px;
+                width: 795px;
+                margin: 0 auto;
+                font-size: 16px;
+            }
+            .search_button{
+                position: relative;
+                left: -4px;
+                top: 1px;
+                font-size: 18px;
+                border: 0px;
+                padding: 0px;
+                height: 46px;
+                width: 142px;
+                background: #00b38a;
+                color: #fff;
+            }
+            .search_popular{
+                font-size: 14px;
+                height: 19px;
+                position: relative;
+                top: -5px;
+            }
+            .search_popular span{
+                color: #777
+            }
+            .search_popular ul{
+                list-style: none;
+                display: inline-block;
+                padding-left: 0px;
+            }
+            .search_popular li{
+                padding-left: 18px;
+                color: #00b38a;
+                display: inline-block;
             }
         </style>
     </head>
@@ -190,18 +244,36 @@
                 </div>
                 <div class="login_verify">
                     <div class="login_phone">
-                        <input type="text" name="phone_number" value="输入手机号" class="phone_number"/>
+                        <input type="text" name="phone_number" value placeholder="输入手机号" class="phone_number"/>
                     </div>
                     <div class="login_captcha">
-                        <input type="text" name="captcha" value="验证码" class="captcha"/>
-                        <button type="submit" class="get_captcha">获取</button>
+                        <input type="text" name="captcha" value placeholder="验证码" class="captcha"/>
                     </div>
+                    <button type="submit" class="get_captcha">获取</button>
                     <div class="login_register">
                         <button>登录/注册</button>
                     </div>
                 </div>
             </div>
             <div class="search">
+                <div class="search_about">
+                    <div>
+                        <input type="text" name="search" placeholder="搜索职位、职位、公司或地点" class="search_box">
+                        <button class="search_button">
+                            搜索
+                        </button>
+                    </div>
+                    <div class="search_popular">
+                        <span>热门搜索:</span>
+                        <ul>
+                            <li>校招早班车</li>
+                            <li>iOS</li>
+                            <li>Java面试</li>
+                            <li>架构设计</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="main"></div>
         </div>
