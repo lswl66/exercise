@@ -5,6 +5,8 @@
         <style>
             body{
                 margin: 0;
+                font-size: 14px;
+                color: #333;
             }
             .top_ads{
                 height: 80px;
@@ -28,7 +30,7 @@
                 padding-right: 25px;
                 cursor: pointer;
             }
-            li:hover{
+            .menu li:hover{
                 color: #fff;
             }
             .menu-son{
@@ -52,7 +54,7 @@
                 line-height: 16px;
                 position: absolute;
                 top: 3px;
-                left: 390px;
+                left: 371px;
                 color: #fff;
                 padding-bottom: 2px;
                 background: #FF7452;
@@ -93,7 +95,7 @@
                 top: 14px;
             }
             .login-son p{
-                font-size: 14px;
+                /* font-size: 14px; */
                 color: #fff;
             }
             .login_verify{
@@ -112,7 +114,7 @@
                 width: 163px;
                 height: 35px;
                 padding-left: 10px;
-                font-size: 14px;
+                /* font-size: 14px; */
                 line-height: 35px;
                 color: #333;
                 box-sizing: border-box;
@@ -188,12 +190,14 @@
                 width: 142px;
                 background: #00b38a;
                 color: #fff;
+                cursor: pointer;
             }
             .search_popular{
-                font-size: 14px;
+                /* font-size: 14px; */
                 height: 19px;
                 position: relative;
                 top: -5px;
+                cursor: pointer;
             }
             .search_popular span{
                 color: #777
@@ -206,6 +210,95 @@
             .search_popular li{
                 padding-left: 18px;
                 color: #00b38a;
+                display: inline-block;
+            }
+            .search_popular ul :hover{
+                text-decoration: underline;
+            }
+            .profession{
+                width: 1200px;
+                margin: 0 auto;
+                position: relative;
+                top: 40px;
+            }
+            .profession_list{
+                display: inline-block;
+            }
+            .profession .sort{
+                width: 321px;
+                height: 47px;
+                border: 1px solid transparent;
+                position: relative;
+            }
+            .profession .sort:hover .sort_div{
+                border: 1px solid #ddd;
+                border-right: none;
+                /* box-shadow: -1px 0px 10px #ddd; */
+                z-index: 10;
+                background: #fff;
+            }
+            .profession_list .sort_span{
+                font-size: 18px;
+                padding-left: 5px;
+            }
+            .profession_list .sort_div{
+                height: 45px;
+                position: relative;
+                /* border: 1px solid transparent; */
+            } 
+            .profession_list .span_sign{
+                float:right;
+                height: 47px;
+                line-height: 47px;
+            }
+            .profession_list ul{
+                display: inline-block;
+                padding-left: 5px;
+            }
+            .profession_list ul :hover{
+                text-decoration: underline;
+                color: #00b38a;
+            }
+            .profession_list li{
+                display: inline-block;
+                padding-right: 16px;
+                cursor: pointer;
+                color: #555;
+                padding-bottom: 10px;
+            }
+            .profession_list .sort_hide{
+                display: none;
+                background: #fff;
+                padding-left: 20px;
+                width: 590px;
+                /* height: 300px; */
+                border: 1px solid #ddd;
+                /* box-shadow: 0 0 4px 2px #ddd; */
+                position: absolute;
+                z-index: 1;
+                left: 320px;
+                top: 0px;
+            }
+            .profession_list .sort_hide span{
+                height: 47px;
+                line-height: 47px;
+            }
+            .profession_list .sort_hide_content ul{
+                margin: 0px;
+                display: block;
+            }
+            .profession_list .sort:hover .sort_hide{
+                display: inline-block;
+            } 
+            .profession_img{
+                display: inline-block;
+                height: 346px;
+                position: relative;
+                left: 35px;
+            }
+            .profession_img .about_tencent{
+                width: 840px;
+                height: 346px;
                 display: inline-block;
             }
         </style>
@@ -275,7 +368,609 @@
                     </div>
                 </div>
             </div>
-            <div class="main"></div>
+            <div class="main">
+                <div class="profession">
+                    <div class="profession_list">
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">技术</span>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>PHP</li>
+                                    <li>C++</li>
+                                    <li>区块链</li>
+                                </ul>
+                                <span class="span_sign">></span>
+                            </div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">后端开发</span>
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>C++</li>
+                                        <li>PHP</li>
+                                        <li>数据挖掘</li>
+                                        <li>搜索算法</li>
+                                        <li>精准推荐</li>
+                                        <li>C</li>
+                                        <li>C#</li>
+                                        <li>全栈工程师</li>
+                                        <li>.NET</li>
+                                        <li>Hadoop</li>
+                                        <li>Python</li>
+                                        <li>Delphi</li>
+                                        <li>VB</li>
+                                        <li>Perl</li>
+                                        <li>Ruby</li>
+                                        <li>Node.js</li>
+                                        <li>Go</li>
+                                        <li>Asp</li>
+                                        <li>Shell</li>
+                                        <li>区块链</li>
+                                        <li>后端开发其他</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">移动开发</span>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>Android</li>
+                                        <li>iOS</li>
+                                        <li>WP</li>
+                                        <li>移动开发其他</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">前端开发</span>
+                                    <ul>
+                                        <li>web前端</li>
+                                        <li>Flash</li>
+                                        <li>html5</li>
+                                        <li>JavaScript</li>
+                                        <li>U3D</li>
+                                        <li>COCOS2D-X</li>
+                                        <li>前端开发其他</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">人工智能</span>
+                                    <ul>
+                                        <li>深度学习</li>
+                                        <li>机器学习</li>
+                                        <li>图像处理</li>
+                                        <li>图像识别</li>
+                                        <li>语音识别</li>
+                                        <li>机器视觉</li>
+                                        <li>算法工程师</li>
+                                        <li>自然语言处理</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">测试</span>
+                                    <ul>
+                                        <li>测试工程师</li>
+                                        <li>自动化测试</li>
+                                        <li>功能测试</li>
+                                        <li>性能测试</li>
+                                        <li>测试开发</li>
+                                        <li>游戏测试</li>
+                                        <li>白盒测试</li>
+                                        <li>灰盒测试</li>
+                                        <li>黑盒测试</li>
+                                        <li>手机测试</li>
+                                        <li>硬件测试</li>
+                                        <li>测试经理</li>
+                                        <li>测试其它</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">运维</span>
+                                    <ul>
+                                        <li>运维工程师</li>
+                                        <li> 运维开发工程师</li>
+                                        <li>网络工程师</li>
+                                        <li>系统工程师</li>
+                                        <li>IT支持</li>
+                                        <li>IDC</li>
+                                        <li>CDN</li>
+                                        <li>系统管理员</li>
+                                        <li>病毒分析</li>
+                                        <li>WEB安全</li>
+                                        <li>网络安全</li>
+                                        <li>系统安全</li>
+                                        <li>运维经理</li>
+                                        <li>运维其它</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">DBA</span>
+                                    <ul>
+                                        <li>MySQL</li>
+                                        <li>SQLSeverver</li>
+                                        <li>Oracle</li>
+                                        <li>DB2</li>
+                                        <li>MongoDB</li>
+                                        <li>ETL</li>
+                                        <li>Hive</li>
+                                        <li>数据仓库</li>
+                                        <li>DBA其它</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">高端职位</span>
+                                    <ul>
+                                        <li>技术经理</li>
+                                        <li>技术总监</li>
+                                        <li>架构师</li>
+                                        <li>CTO</li>
+                                        <li>运维总监</li>
+                                        <li>技术合伙人</li>
+                                        <li>项目总监</li>
+                                        <li>测试总监</li>
+                                        <li>安全专家</li>
+                                        <li>高端技术职位其它</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">项目管理</span>
+                                    <ul>
+                                        <li>项目经理</li>
+                                        <li>项目助理</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="sort_hide_content">
+                                <span class="sort_hide_span">硬件开发</span>
+                                <ul>
+                                    <li>硬件</li>
+                                    <li>嵌入式</li>
+                                    <li>自动化</li>
+                                    <li>单片机</li>
+                                    <li>电路设计</li>
+                                    <li>驱动开发</li>
+                                    <li>系统集成</li>
+                                    <li>FPGA开发</li>
+                                    <li>DSP开发</li>
+                                    <li>ARM开发</li>
+                                    <li>PCB工艺</li>
+                                    <li>模具设计</li>
+                                    <li>热传导</li>
+                                    <li>材料工程师</li>
+                                    <li>精益工程师</li>
+                                    <li>射频工程师</li>
+                                    <li>硬件开发其它</li>
+                                </ul>
+                            </div>
+                            <div class="sort_hide_content">
+                                <span class="sort_hide_span">企业软件</span>
+                                <ul>
+                                    <li>实施工程师</li>
+                                    <li>售前工程师</li>
+                                    <li>售后工程师</li>
+                                    <li>BI工程师</li>
+                                    <li>企业软件其它</li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">产品</span>
+                                <ul>
+                                    <li>产品总监</li>
+                                    <li>产品经理</li>
+                                </ul>
+                                <span class="span_sign">></span>
+                            </div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">产品经理</span>
+                                    <ul>
+                                        <li>产品经理</li>
+                                        <li>网页产品经理</li>
+                                        <li>移动产品经理</li>
+                                        <li>产品助理</li>
+                                        <li>数据产品经理</li>
+                                        <li>电商产品经理</li>
+                                        <li>游戏策划</li>
+                                        <li>产品实习生</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">产品设计师</span>
+                                    <ul>
+                                        <li>网页产品设计师</li>
+                                        <li>无线产品设计师</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                        <span class="sort_hide_span">高端职位</span>
+                                        <ul>
+                                            <li>产品部经理</li>
+                                            <li>产品总监</li>
+                                            <li>游戏制作人</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">设计</span>
+                                <ul>
+                                    <li>UI设计师</li>
+                                    <li>交互设计</li>
+                                    <li>网页设计师</li>
+                                </ul>
+                                <span class="span_sign">></span></div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">视觉设计</span>
+                                    <ul>
+                                        <li>视觉设计师</li>
+                                        <li>网页设计师</li>
+                                        <li>Flash设计师</li>
+                                        <li>APP设计师</li>
+                                        <li>UI设计师</li>
+                                        <li>平面设计师</li>
+                                        <li>美术设计师（2D/3D）</li>
+                                        <li>广告设计师</li>
+                                        <li>多媒体设计师</li>
+                                        <li>原画师</li>
+                                        <li>游戏特效</li>
+                                        <li>游戏界面设计师</li>
+                                        <li>游戏场景</li>
+                                        <li>游戏角色</li>
+                                        <li>游戏动作</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">交互设计</span>
+                                    <ul>
+                                        <li>交互设计师</li>
+                                        <li>无线交互设计师</li>
+                                        <li>网页交互设计师</li>
+                                        <li>硬件交互设计师</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">用户研究</span>
+                                    <ul>
+                                        <li>数据分析师</li>
+                                        <li>用户研究员</li>
+                                        <li>游戏数值策划</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">高端职位</span>
+                                    <ul>
+                                        <li>设计经理/主管</li>
+                                        <li>设计总监</li>
+                                        <li>视觉设计经理/主管</li>
+                                        <li>视觉设计总监</li>
+                                        <li>交互设计经理/主管</li>
+                                        <li>交互设计总监</li>
+                                        <li>用户研究经理/主管</li>
+                                        <li>用户研究总监</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">运营</span>
+                                <ul>
+                                    <li>新媒体运营</li>
+                                    <li>编辑</li>
+                                    <li>数据运营</li>
+                                </ul>
+                                <span class="span_sign">></span></div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">运营</span>
+                                    <ul>
+                                        <li>用户运营</li>
+                                        <li>产品运营</li>
+                                        <li>数据运营</li>
+                                        <li>内容运营</li>
+                                        <li>活动运营</li>
+                                        <li>商家运营</li>
+                                        <li>平类运营</li>
+                                        <li>游戏运营</li>
+                                        <li>网络推广</li>
+                                        <li>运营专员</li>
+                                        <li>网店运营</li>
+                                        <li>新媒体运营</li>
+                                        <li>海外运营</li>
+                                        <li>运营经理</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">编辑</span>
+                                    <ul>
+                                        <li>副主编</li>
+                                        <li>内容编辑</li>
+                                        <li>文案策划</li>
+                                        <li>记者</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">客服</span>
+                                    <ul>
+                                        <li>售前咨询</li>
+                                        <li>售后客服</li>
+                                        <li>淘宝客服</li>
+                                        <li>客服经理</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">高端职位</span>
+                                    <ul>
+                                        <li>主编</li>
+                                        <li>运营总监</li>
+                                        <li>COO</li>
+                                        <li>客服总监</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">市场</span>
+                                <ul>
+                                    <li>市场营销</li>
+                                    <li>市场推广</li>
+                                    <li>市场策划</li>
+                                </ul>
+                                <span class="span_sign">></span>
+                            </div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">市场/营销</span>
+                                    <ul>
+                                        <li>市场营销</li>
+                                        <li>市场策划</li>
+                                        <li>市场顾问</li>
+                                        <li>商务渠道</li>
+                                        <li>商务数据分析</li>
+                                        <li>活动策划</li>
+                                        <li>网络营销</li>
+                                        <li>海外市场</li>
+                                        <li>商务专员</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">媒介/公关</span>
+                                    <ul>
+                                        <li>政府关系</li>
+                                        <li>品牌公关</li>
+                                        <li>广告协调</li>
+                                        <li>媒介投放</li>
+                                        <li>媒介合作</li>
+                                        <li>媒介顾问</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">品牌/广告</span>
+                                    <ul>
+                                        <li>广告创意</li>
+                                        <li>广告制作</li>
+                                        <li>广告文案</li>
+                                        <li>广告投放</li>
+                                        <li>广告定价</li>
+                                        <li>广告专员</li>
+                                        <li>品牌合作</li>
+                                        <li>品牌策划</li>
+                                        <li>品牌专员</li>
+                                        <li>美术指导</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">渠道/推广</span>
+                                    <ul>
+                                        <li>市场推广</li>
+                                        <li>渠道推广</li>
+                                        <li>SEO</li>
+                                        <li>SEM</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">高端职位</span>
+                                    <ul>
+                                        <li>策划经理</li>
+                                        <li>媒介经理</li>
+                                        <li>市场总监</li>
+                                        <li>公关总监</li>
+                                        <li>媒介总监</li>
+                                        <li>创意总监</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">销售</span>
+                                <ul>
+                                    <li>销售专员</li>
+                                    <li>销售经理</li>
+                                    <li>销售总监</li>
+                                </ul>
+                                <span class="span_sign">></span></div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">销售</span>
+                                    <ul>
+                                        <li>销售专员</li>
+                                        <li>销售顾问</li>
+                                        <li>客户代表</li>
+                                        <li>大客户代表</li>
+                                        <li>客户经理</li>
+                                        <li>商户拓展</li>
+                                        <li>渠道销售</li>
+                                        <li>代理商销售</li>
+                                        <li>电话销售</li>
+                                        <li>广告销售</li>
+                                        <li>信用卡销售</li>
+                                        <li>保险销售</li>
+                                        <li>销售工程师</li>
+                                        <li>商务渠道</li>
+                                        <li>其它销售</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">销售管理</span>
+                                    <ul>
+                                        <li>销售总监</li>
+                                        <li>商务总监</li>
+                                        <li>区域总监</li>
+                                        <li>城市经理</li>
+                                        <li>团队经理</li>
+                                        <li>销售VIP</li>
+                                        <li>商务主管</li>
+                                        <li>其他销售管理职位</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">职能</span>
+                                <ul>
+                                    <li>HR</li>
+                                    <li>行政</li>
+                                    <li>财务</li>
+                                    <li>审计</li>
+                                </ul>
+                                <span class="span_sign">></span></div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">人力资源</span>
+                                    <ul>
+                                        <li>人力资源</li>
+                                        <li>招聘</li>
+                                        <li>HRBP</li>
+                                        <li>人事/HR</li>
+                                        <li>培训经理</li>
+                                        <li>薪资福利经理</li>
+                                        <li>绩效考核经理</li>
+                                        <li>员工关系</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">行政</span>
+                                    <ul>
+                                        <li>助理</li>
+                                        <li>前台</li>
+                                        <li>行政</li>
+                                        <li>总助</li>
+                                        <li>文秘</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">财务</span>
+                                    <ul>
+                                        <li>会计</li>
+                                        <li>出纳</li>
+                                        <li>财务</li>
+                                        <li>结算</li>
+                                        <li>税务</li>
+                                        <li>审计</li>
+                                        <li>风控</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">法务</span>
+                                    <ul>
+                                        <li>法务</li>
+                                        <li>律师</li>
+                                        <li>专利</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">高端职位</span>
+                                    <ul>
+                                        <li>行政总监/经理</li>
+                                        <li>财务总监/经理</li>
+                                        <li>HRD/HRM</li>
+                                        <li>CFO</li>
+                                        <li>CEO</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <div class="sort_div">
+                                <span class="sort_span">游戏</span>
+                                <ul>
+                                    <li>小游戏开发</li>
+                                    <li>U3D</li>
+                                    <li>游戏策划</li>
+                                </ul>
+                                <span class="span_sign">></span></div>
+                            <div class="sort_hide">
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">技术开发</span>
+                                    <ul>
+                                        <li>H5游戏开发</li>
+                                        <li>小游戏开发</li>
+                                        <li>游戏后端开发</li>
+                                        <li>C++游戏开发</li>
+                                        <li>FLASH</li>
+                                        <li>COCOS2D-X</li>
+                                        <li>U3D</li>
+                                        <li>游戏测试</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">产品策划</span>
+                                    <ul>
+                                        <li>游戏制作人</li>
+                                        <li>游戏产品经理</li>
+                                        <li>游戏项目经理</li>
+                                        <li>游戏策划</li>
+                                        <li>剧情设计</li>
+                                        <li>游戏文案</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">设计</span>
+                                    <ul>
+                                        <li>游戏动画</li>
+                                        <li>游戏原画</li>
+                                        <li>游戏界面</li>
+                                        <li>游戏场景</li>
+                                        <li>游戏角色</li>
+                                        <li>游戏动作</li>
+                                        <li>游戏动效</li>
+                                        <li>游戏美工</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">运营/推广</span>
+                                    <ul>
+                                        <li>游戏运营</li>
+                                        <li>游戏编辑</li>
+                                        <li>游戏推广</li>
+                                        <li>手游推广</li>
+                                        <li>页游推广</li>
+                                    </ul>
+                                </div>
+                                <div class="sort_hide_content">
+                                    <span class="sort_hide_span">其他</span>
+                                    <ul>
+                                        <li>游戏主播</li>
+                                        <li>游戏陪练</li>
+                                        <li>游戏体验</li>
+                                        <li>电竞主持</li>
+                                        <li>电竞讲师</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profession_img">
+                        <img src="https://www.lgstatic.com/i/image2/M01/92/83/CgoB5l2LPD-AXq3mAAGUPLYyy4w130.JPG" class="about_tencent">
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
