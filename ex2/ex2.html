@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ex2</title>
+        <title>ex2_拉勾</title>
         <style>
             body{
                 margin: 0;
@@ -215,9 +215,11 @@
             .search_popular ul :hover{
                 text-decoration: underline;
             }
-            .profession{
+            .main{
                 width: 1200px;
                 margin: 0 auto;
+            }
+            .profession{
                 position: relative;
                 top: 40px;
             }
@@ -300,6 +302,174 @@
                 width: 840px;
                 height: 346px;
                 display: inline-block;
+            }
+            .main_jobs{
+                margin-top: 80px;
+            }
+            .main_sort_jobs_ul{
+                padding-left:0px; 
+                list-style: none;
+                border-bottom:1px solid #ddd; 
+            }
+            .main_sort_jobs_ul li{
+                cursor: pointer;
+                display: inline-block;
+                font-size: 16px;
+                padding-bottom: 15px;
+            }
+            .main_sort_popular{
+                border-bottom: 2px solid #000;
+            }
+            .main_sort_latest{
+                color: #999;
+            }
+            .main_sort_jobs_ul div{
+                display: inline-block;
+                width: 40px;
+            }
+            .main_popular_jobs_ul{
+                height: 190px;
+                padding:0 0 12px;
+                list-style: none;
+                /* display: inline-block; */
+                display: flex; 
+            }
+            .main_popular_jobs_li{
+                /* display: inline-block; */
+                height: 196px;
+                margin: 15px 16px 0 0;
+                flex: 1;
+                border: 1px solid #eaeeed;
+                padding: 1px 18px;
+            }
+            .main_popular_jobs_li:hover{
+                box-shadow: 0px 0px 5px #ddd;
+            }
+            .main_popular_jobs_li .main_popular_jobs_card{
+                display: inline-block;
+                position: relative;
+                /* padding: 20px 15px 15px; */
+                width: 351px;
+                height: 178px;
+                /* border: 1px solid #999; */
+            }
+            .main_popular_jobs_summary{
+                /* border-bottom: 1px dashed #e0e0e0;  */
+                position: relative;
+                top: 5px;
+            }
+            .main_popular_jobs_summary_jobsname p{
+                font-size: 16px;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .main_popular_jobs_summary .send_time{
+                color: #999;
+            }
+            .main_popular_jobs_summary .jobs_salary{
+                font-size: 16px;
+                position: relative;
+                top: 16px;
+                float: right;
+                color: #FF7452;
+            }
+            .main_popular_jobs_summary_limit{
+                position: relative;
+                top: -8px;
+                color: #777;
+            }
+            .main_popular_jobs_summary_label{
+                position: relative;
+                top: 5px;
+            }
+            .main_popular_jobs_summary_label .label_word{
+                display: inline-block;
+                text-align: center;
+                width: 61px;
+                height: 26px;
+                padding: 0 5px;
+                line-height: 26px;
+                border: 1px solid #ddd;
+                font-size: 12px;
+                color: #999;
+            }
+            .jobs_card_icon_span{
+                background-image: url(//www.lgstatic.com/www/static/index/modules/job_list/img/direct-recruit@2x_0d49da5.png);
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                z-index: 100;;
+                top: -1px;
+                left: -18px;
+            }
+            .main_popular_jobs_firm{
+                padding-top: 5px; 
+                position: relative;
+                top: 30px;
+                border-top: 1px dashed #e0e0e0; 
+            }
+            .main_popular_jobs_firm img{
+                padding-top: 10px;
+                width: 40px;
+                height: 40px;
+            }
+            .main_popular_jobs_firm div{
+                /* padding-top:10px; */
+                display: inline-block;
+                position: relative;
+                top: -6px;
+            }
+            .main_popular_jobs_firm div a{ 
+                text-decoration: none;
+                color: #000;
+                display: block;
+            }
+            .main_popular_jobs_firm div:hover a{
+                color: #00b38a;
+            }
+            .main_popular_jobs_firm div span{ 
+                color: #999;
+                display: block;
+            }
+            .see_more{
+                text-decoration: none;
+                position: relative;
+                top: 15px;
+                width: 389px;
+                /* width: 387px; */
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                font-size: 16px;
+                border: 1px solid #00b38a;
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+                background: #fff;
+                color: #00b38a;
+                /* cursor: pointer; */
+                /* display: block; */
+                /* margin: 0 auto; */
+            }
+            /* .see_more button{
+                text-decoration: none;
+                width: 387px;
+                height: 44px;
+                font-size: 16px;
+                border: 1px solid #00b38a;
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+                background: #fff;
+                color: #00b38a;
+            } */
+            .see_more:hover{
+                background: #00b38a;
+                color: #fff;
+            }
+            .test{
+                height: 1000px;
             }
         </style>
     </head>
@@ -970,6 +1140,257 @@
                         <img src="https://www.lgstatic.com/i/image2/M01/92/83/CgoB5l2LPD-AXq3mAAGUPLYyy4w130.JPG" class="about_tencent">
                     </div>
                 </div>
+                <div class="main_jobs">
+                    <div class="main_sort_jobs">
+                        <ul class="main_sort_jobs_ul">
+                            <li class="main_sort_popular">24Hour热门</li>
+                            <div></div>
+                            <li class="main_sort_latest">最新职位</li>
+                        </ul>
+                    </div>
+                    <div class="main_popular_jobs">
+                        <ul class="main_popular_jobs_ul">
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card jobs_card_icon">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>测试工程师</p>
+                                        <span class="send_time">[17:05发布]</span>
+                                        <span class="jobs_salary">10k-15k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                            经验应届毕业生 / 本科
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">移动互联网</span>
+                                            <span class="label_word">工具软件</span>
+                                            <span class="label_word">测试</span>
+                                        </div>
+                                    </div>
+                                    <span class="jobs_card_icon_span"></span>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image2/M01/90/CE/CgotOV2IK22AKZQVAAA-SfVp0uE669.png"></a>
+                                        <div>
+                                            <a href="#">Versa</a>
+                                            <span>移动互联网,文娱丨内容 / A轮 / 上海</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>产品经理 </p>
+                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="jobs_salary">15k-20k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                            经验3-5年 / 大专
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">教育</span>
+                                            <span class="label_word">产品设计</span>
+                                            <span class="label_word">产品策划</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image2/M01/58/E9/CgotOV0dpSKADO1uAABop9eDGf8156.jpg"></a>
+                                        <div>
+                                            <a href="#">赛银科技园</a>
+                                            <span>人工智能,房产家居 / 不需要融资 / 杭州</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>美工</p>
+                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="jobs_salary">6k-10k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                            经验3-5年 大专
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">电商</span>
+                                            <span class="label_word">新零售</span>
+                                            <span class="label_word">电商美工</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image2/M01/76/8A/CgotOV1TpEmAZqybAACO8GLeLyw534.jpg"></a>
+                                        <div>
+                                            <a href="#">梵大集团</a>
+                                            <span>移动互联网,其他 / 不需要融资 / 广州</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="main_popular_jobs_ul">
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>数据产品经理</p>
+                                        <span class="send_time">[17:04发布]]</span>
+                                        <span class="jobs_salary">18k-25k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                            经验3-5年 本科
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">数据分析</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image/M00/2C/F2/CgpEMlkn1tOADsAoAAAeNo4Pumk661.png"></a>
+                                        <div>
+                                            <a href="#">金柚网</a>
+                                            <span>移动互联网,企业服务 B轮 杭州</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>销售经理(教育软件)</p>
+                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="jobs_salary">7k-12k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                                经验3-5年 / 大专
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">移动互联网</span>
+                                            <span class="label_word">教育</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image2/M01/8A/C0/CgotOVuWVcqAa56DAAHAu9MQZiE632.jpg"></a>
+                                        <div>
+                                            <a href="#">华智电子</a>
+                                            <span>硬件,人工智能 / 未融资 / 广州</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>新媒体运营专员</p>
+                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="jobs_salary">6k-10k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                                经验1-3年 / 大专
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">运营</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image3/M00/1A/A7/Cgq2xlp6eH6AD8_1AACoOLXqV8M117.jpg"></a>
+                                        <div>
+                                            <a href="#">津晶科技</a>
+                                            <span>移动互联网,金融 / 不需要融资 / 广州</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="main_popular_jobs_ul">
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>广告商务经理(公众号方向)</p>
+                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="jobs_salary">8k-15k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                            经验1-3年 大专
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">移动互联网</span>
+                                            <span class="label_word">广告销售</span>
+                                            <span class="label_word">市场拓展</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image2/M01/18/A5/CgotOVyv93yAHNWwAAAkjiOcqC4614.png"></a>
+                                        <div>
+                                            <a href="#">广州杨盛</a>
+                                            <span>移动互联网,数据服务 / 未融资 / 广州</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>AI产品经理 </p>
+                                        <span class="send_time">[17:04发布]]</span>
+                                        <span class="jobs_salary">15k-25k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                            经验3-5年 / 本科
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">推荐</span>
+                                            <span class="label_word">教育</span>
+                                            <span class="label_word">产品设计</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image/M00/7D/56/CgqKkVhHknKAFZU_AACiNZj9xGI162.jpg"></a>
+                                        <div>
+                                            <a href="#">布本智能</a>
+                                            <span>数据服务 / A轮 / 北京</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main_popular_jobs_li">
+                                <div class="main_popular_jobs_card">
+                                    <div class="main_popular_jobs_summary">
+                                        <div class="main_popular_jobs_summary_jobsname">
+                                        <p>客户端C/C++ 工程师 </p>
+                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="jobs_salary">20k-40k</span>
+                                        </div>
+                                        <div class="main_popular_jobs_summary_limit">
+                                            经验3-5年 / 本科
+                                        </div>
+                                        <div class="main_popular_jobs_summary_label">
+                                            <span class="label_word">C</span>
+                                            <span class="label_word">C++</span>
+                                            <span class="label_word">Linux/Unix</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_popular_jobs_firm">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/image1/M00/1C/CD/Cgo8PFUnRoaABHOIAACAkPVErk8851.png"></a>
+                                        <div>
+                                            <a href="#">青藤云安全</a>
+                                            <span>数据服务 / B轮 / 北京</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="see_more">
+                    查看更多
+                </a>
+                <div class="test"> </div>
             </div>
         </div>
     </body>
