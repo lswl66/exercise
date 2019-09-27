@@ -306,24 +306,24 @@
             .main_jobs{
                 margin-top: 80px;
             }
-            .main_sort_jobs_ul{
+            .separate_line_ul{
                 padding-left:0px; 
                 list-style: none;
                 border-bottom:1px solid #ddd; 
             }
-            .main_sort_jobs_ul li{
+            .separate_line_ul li{
                 cursor: pointer;
                 display: inline-block;
                 font-size: 16px;
                 padding-bottom: 15px;
             }
-            .main_sort_popular{
+            .separate_line_ul_li{
                 border-bottom: 2px solid #000;
             }
             .main_sort_latest{
                 color: #999;
             }
-            .main_sort_jobs_ul div{
+            .separate_line_ul div{
                 display: inline-block;
                 width: 40px;
             }
@@ -394,7 +394,8 @@
                 color: #999;
             }
             .jobs_card_icon_span{
-                background-image: url(//www.lgstatic.com/www/static/index/modules/job_list/img/direct-recruit@2x_0d49da5.png);
+                background-image: url(http://www.lgstatic.com/www/static/index/modules/job_list/img/direct-recruit@2x_0d49da5.png);
+                background-size: 100%;
                 display: inline-block;
                 width: 40px;
                 height: 40px;
@@ -468,8 +469,88 @@
                 background: #00b38a;
                 color: #fff;
             }
-            .test{
-                height: 1000px;
+            .popular_firm_ul{
+                width: 1216px;
+                height: 190px;
+                padding:0 0 12px;
+                margin-bottom:85px; 
+                list-style: none;
+                /* display: inline-block; */
+                display: flex; 
+            }
+            .popular_firm_li{
+                /* display: inline-block; */
+                width: 286px;
+                height: 268px;
+                margin: 15px 16px 0 0;
+                flex: 1;
+                border: 1px solid #eaeeed;
+                /* padding: 1px 18px; */
+            }
+            .popular_firm_li:hover{
+                box-shadow: 0px 0px 5px #ddd;
+            }
+            .popular_firm_li .popular_firm_card{
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                top: -10px;
+                padding:0 15px 15px;
+                width: 256px;
+                height: 268px;
+                /* border: 1px solid #999; */
+            }
+            .popular_firm_summary{
+                /* border-bottom: 1px dashed #e0e0e0;  */
+                position: relative;
+                top: 20px;
+            }
+            .popular_firm_summary p{
+                cursor: pointer;
+                font-size: 16px;
+            }
+            .popular_firm_summary span{
+                color: #555;
+            }
+            .popular_firm_summary_firmimg p{
+                font-size: 16px;
+                cursor: pointer;
+                display: block;
+            }
+            .popular_firm_summary_limit{
+                position: relative;
+                top: -8px;
+                color: #999;
+            }
+            .popular_firm_summary_firmimg img{
+                padding-top: 10px;
+                width: 80px;
+                height: 80px;
+            }
+            .popular_firm_date{
+                display: flex;
+                position: relative;
+                top: 30px;
+                border-top: 1px dashed #e0e0e0;
+                font-size: 12px;
+            }
+            .popular_firm_date div{
+                flex: 1;
+                cursor: pointer;
+            }
+            .popular_firm_date span{
+                width: 10px;
+            }
+            .popular_firm_date_number{
+                color: #00b38a;
+            }
+            .popular_firm_date_sort{
+                color: #999;
+                position: relative;
+                top: -10px;
+            }
+            .popular_firm_date :hover .popular_firm_date_sort{
+                color: #00b38a;
             }
         </style>
     </head>
@@ -1141,9 +1222,9 @@
                     </div>
                 </div>
                 <div class="main_jobs">
-                    <div class="main_sort_jobs">
-                        <ul class="main_sort_jobs_ul">
-                            <li class="main_sort_popular">24Hour热门</li>
+                    <div class="separate_line">
+                        <ul class="separate_line_ul">
+                            <li class="separate_line_ul_li">24Hour热门</li>
                             <div></div>
                             <li class="main_sort_latest">最新职位</li>
                         </ul>
@@ -1214,6 +1295,7 @@
                                         <div class="main_popular_jobs_summary_limit">
                                             经验3-5年 大专
                                         </div>
+                                        <span class="jobs_card_icon_span"></span>
                                         <div class="main_popular_jobs_summary_label">
                                             <span class="label_word">电商</span>
                                             <span class="label_word">新零售</span>
@@ -1390,7 +1472,270 @@
                 <a href="#" class="see_more">
                     查看更多
                 </a>
-                <div class="test"> </div>
+                <br><br><br>
+                <div class="separate_line">
+                    <ul class="separate_line_ul">
+                        <li class="separate_line_ul_li">互联网热门公司</li>
+                        <div></div>
+                    </ul>
+                </div>
+                <div class="popular_firm">
+                    <ul class="popular_firm_ul">
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image/M00/00/8C/CgqKkVZNdJ-ANh18AAChEneytgQ419.jpg"></a>
+                                    </div>
+                                    <p>辰岚广告</p>
+                                    <div class="popular_firm_summary_limit">
+                                            广告营销,企业服务 / 不需要融资
+                                    </div>
+                                    <span>年轻、朝气、愉悦的氛围。</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">18</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">24</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">78%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image2/M00/17/C2/CgoB5ln5lUuAM8oSAADO2Rz54hQ336.png"></a>
+                                    </div>
+                                    <p>袋鼠云</p>
+                                    <div class="popular_firm_summary_limit">
+                                        数据服务 / A轮
+                                    </div>
+                                    <span>由多名中国数据智能领域资深专家创立...</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">7</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">48</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">100%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image/M00/07/D2/CgqKkVbOwmWAeDpuAAAo1fO92a4492.jpg"></a>
+                                    </div>
+                                    <p>骆驼电商</p>
+                                    <div class="popular_firm_summary_limit">
+                                            电商,消费生活 / 上市公司
+                                    </div>
+                                    <span>选择我们，选择更广阔的发展空间</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">29</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">5</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">52%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image2/M01/B4/A1/CgoB5lwHi-2ADLSxAACEBWVZGpw497.png"></a>
+                                    </div>
+                                    <p>作业帮</p>
+                                    <div class="popular_firm_summary_limit">
+                                        工具 / D轮及以上
+                                    </div>
+                                    <span>让优质教育触手可及</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">38</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">449</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">94%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="popular_firm_ul">
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image/M00/06/0E/Cgp3O1bMA8aAQ7P5AAATgiqm6ik174.png"></a>
+                                    </div>
+                                    <p>云路天行</p>
+                                    <div class="popular_firm_summary_limit">
+                                        移动互联网 / 不需要融资
+                                    </div>
+                                    <span>公司一直秉承共同创造、共同发展、共...</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">5</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">3</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">100%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image/M00/04/00/CgqKkVbFXSeACvNAAACesP6K1Zw650.jpg"></a>
+                                    </div>
+                                    <p>世纪阳天</p>
+                                    <div class="popular_firm_summary_limit">
+                                        责任 执行 共赢 爱心
+                                    </div>
+                                    <span>人工智能,房产家居 / 不需要融资 / 杭州</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">62</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">19</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">100%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image3/M00/24/5B/Cgq2xlqWZ9qADb_lAABPw4Y95OQ012.png"></a>
+                                    </div>
+                                    <p>90KM</p>
+                                    <div class="popular_firm_summary_limit">
+                                        游戏 / A轮
+                                    </div>
+                                    <span>Create joy around the world</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">48</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">5</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">89%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="popular_firm_li">
+                            <div class="popular_firm_card">
+                                <div class="popular_firm_summary">
+                                    <div class="popular_firm_summary_firmimg">
+                                        <a href="#"><img src="https://www.lgstatic.com/thumbnail_160x160/i/image/M00/07/D2/CgqKkVbOwmWAeDpuAAAo1fO92a4492.jpg"></a>
+                                    </div>
+                                    <p>骆驼电商</p>
+                                    <div class="popular_firm_summary_limit">
+                                        电商,消费生活 / 上市公司
+                                    </div>
+                                    <span>选择我们，选择更广阔的发展空间</span>
+                                </div>
+                                <div class="popular_firm_date">
+                                    <div>
+                                        <p class="popular_firm_date_number">29</p>
+                                        <p class="popular_firm_date_sort">面试评价</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">5</p>
+                                        <p class="popular_firm_date_sort">在招职位</p>
+                                    </div>
+                                    <span></span>
+                                    <div>
+                                        <p class="popular_firm_date_number">52%</p>
+                                        <p class="popular_firm_date_sort">简历处理率</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="see_more">
+                    查看更多
+                </a>
+                <br><br><br>
+                <div class="separate_line">
+                    <ul class="separate_line_ul">
+                        <li class="separate_line_ul_li">友情链接</li>
+                        <div></div>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </body>
