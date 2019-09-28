@@ -101,7 +101,7 @@
             .menu_son_firm{
                 display: inline-block;
                 position: relative;
-                top: 15px;
+                top: 13px;
                 right: -80px;
                 color: #afb5c0;
                 cursor: pointer;
@@ -403,6 +403,7 @@
             }
             .main_popular_jobs_summary .send_time{
                 color: #999;
+                position: relative;
             }
             .main_popular_jobs_summary .jobs_salary{
                 font-size: 16px;
@@ -441,6 +442,126 @@
                 z-index: 100;;
                 top: -1px;
                 left: -18px;
+            }
+            .jobs_card_chatme{
+                background-image: url(http://www.lgstatic.com/lg-www-fed/index/modules/job_list/img/icon_chat2_d162651.png);
+                background-size: 16px 16px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                cursor: pointer;
+                width: 30px;
+                height: 16px;
+                position: relative;
+                /* z-index: 100; */
+                top: 0px;
+                left: 0px;
+            }
+            .jobs_card_chatme_card1{
+                display: none;
+                cursor: pointer;
+                background: #FFF;
+                color: #333;
+                width: 312px;
+                height: 132px;
+                padding: 16px;
+                border: 1px solid #dce4e6;
+                position: absolute;
+                z-index: 100009;
+                left: 40px;
+                top: -36px;
+            }
+            .jobs_card_chatme_card1_triangle{
+                width: 14px;
+                height: 14px;
+                background: #FFF;
+                border: 1px solid #dce4e6;
+                border-bottom:none;
+                border-right: none;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 36px;
+                left: -8px;
+            }
+            .jobs_card_chatme_card1_left{
+                width: 188px;
+                display: inline-block;
+            }
+            .jobs_card_chatme_card1_right{
+                display: inline-block;
+                width: 118px;
+                height: 118px;
+            }
+            .jobs_card_chatme_card1_left img{
+                width: 62px;
+                height: 62px;
+                border-radius: 31px;
+            }
+            .jobs_card_chatme_card1_left .hr_name{
+                font-size: 18px;
+                /* display: inline-block; */
+            }
+            .jobs_card_chatme_card1_left .hr_info{
+                display: inline-block;
+                line-height: 22px;
+                position: relative;
+                top: -18px;
+                left: 5px;
+            }
+            .jobs_card_chatme:hover .jobs_card_chatme_card1{
+                display: block;
+            }
+            .jobs_card_chatme_card2{
+                display: none;
+                cursor: pointer;
+                background: #FFF;
+                width: 312px;
+                height: 132px;
+                padding: 16px;
+                border: 1px solid #dce4e6;
+                position: absolute;
+                z-index: 10009;
+                right: 52px;
+                top: -36px;
+            }
+            .jobs_card_chatme_card2_triangle{
+                width: 14px;
+                height: 14px;
+                background: #FFF;
+                border: 1px solid #dce4e6;
+                border-top:none;
+                border-left: none;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 36px;
+                right: -8px;
+            }
+            .jobs_card_chatme_card2_left{
+                width: 188px;
+                display: inline-block;
+            }
+            .jobs_card_chatme_card2_right{
+                display: inline-block;
+                width: 118px;
+                height: 118px;
+            }
+            .jobs_card_chatme_card2_left img{
+                width: 62px;
+                height: 62px;
+                border-radius: 31px;
+            }
+            .jobs_card_chatme_card2_left .hr_name{
+                font-size: 18px;
+                /* display: inline-block; */
+            }
+            .jobs_card_chatme_card2_left .hr_info{
+                display: inline-block;
+                line-height: 22px;
+                position: relative;
+                top: -18px;
+                left: 5px;
+            }
+            .jobs_card_chatme:hover .jobs_card_chatme_card2{
+                display: block;
             }
             .main_popular_jobs_firm{
                 padding-top: 5px; 
@@ -663,7 +784,7 @@
                 color: #fff;
             }
             .foot_mina:hover div img{
-                display: block;
+                display: inline-block;
             }
             .foot_mina div img{
                 display: none; 
@@ -675,18 +796,43 @@
                 top: 0px;
                 right: -150px;
             }
-            .inner_wrapper_left p .wechat{
+            .inner_wrapper_left .wechat{
+                display: inline-block;
+                height: 30px;
                 color: #555;
                 text-decoration: none;
                 position: relative;
                 top: 15px;
                 left: 19px;
+                cursor: pointer;
             }
-            .inner_wrapper_left p .weibo{
+            .inner_wrapper_left .weibo{
+                cursor: pointer;
+                display: inline-block;
                 color: #555;
                 text-decoration: none;
                 position: relative;
                 top: 15px;
+                left: 65px;
+            }
+            .inner_wrapper_left .wechat:hover{
+                color: #00b38a;
+            }
+            .inner_wrapper_left .weibo:hover{
+                color: #00b38a;
+            }
+            .inner_wrapper_left .wechat:hover img{
+                display: block;
+            }
+            .inner_wrapper_left .wechat img{
+                display: none; 
+                width: 140px;
+                height: 140px;
+                box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+                position: absolute;
+                z-index: 10000;
+                top: 30px;
+                right: -60px;
             }
             .inner_wrapper_left p span{
                 display: inline-block;
@@ -714,25 +860,6 @@
             }
             .inner_wrapper_right a:hover{
                 color: #00b38a;
-            }
-            .inner_wrapper_left .wechat:hover{
-                color: #00b38a;
-            }
-            .inner_wrapper_left .weibo:hover{
-                color: #00b38a;
-            }
-            .inner_wrapper_left .wechat:hover img{
-                display: block;
-            }
-            .inner_wrapper_left .wechat img{
-                display: none; 
-                width: 140px;
-                height: 140px;
-                box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-                position: absolute;
-                z-index: 10000;
-                top: 30px;
-                right: -60px;
             }
             .copyright{
                 height: 100px;
@@ -818,7 +945,7 @@
                 /* background-size: 150%; */
                 position: absolute;
                 right: 112px;
-                top: 12px;
+                top: 10px;
                 z-index: 100000;
                 background-repeat: no-repeat;
                 width: 18px;
@@ -832,7 +959,7 @@
                 /* background-size: 150%; */
                 position: absolute;
                 right: 53px;
-                top: 12px;
+                top: 10px;
                 z-index: 100000;
                 background-repeat: no-repeat;
                 width: 18px;
@@ -882,13 +1009,13 @@
                 /* cursor: pointer; */
             }
             .logo_wechat{
-                display: block;
+                display: inline-block;
                 background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
                 background-position: -114px -184px;
                 /* background-size: 150%; */
                 position: absolute;
-                left: 0px;
-                bottom: 30px;
+                left: -22px;
+                bottom: 4px;
                 z-index: 100000;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -901,8 +1028,8 @@
                 background-position: -114px -220px;
                 /* background-size: 150%; */
                 position: absolute;
-                left: 0px;
-                bottom: 30px;
+                left: -22px;
+                bottom: 4px;
                 z-index: 100000;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -910,13 +1037,13 @@
                 cursor: pointer;
             }
             .logo_weibo{
-                display: block;
+                display: inline-block;
                 background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
                 background-position: -214px -20px;
                 /* background-size: 150%; */
                 position: absolute;
-                left: 105px;
-                bottom: 30px;
+                left: -22px;
+                bottom: -7px;
                 z-index: 100000;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -929,8 +1056,8 @@
                 background-position: -172px -20px;
                 /* background-size: 150%; */
                 position: absolute;
-                left: 105px;
-                bottom: 30px;
+                left: -22px;
+                bottom: -7px;
                 z-index: 100000;
                 background-repeat: no-repeat;
                 width: 20px;
@@ -1628,7 +1755,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>测试工程师</p>
-                                        <span class="send_time">[17:05发布]</span>
+                                        <span class="send_time">[17:05发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card1">
+                                                    <span class="jobs_card_chatme_card1_triangle"></span>
+                                                    <div class="jobs_card_chatme_card1_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/8A/D7/CgotOV14ke6AKH-xAALKIWlX3Q0704.png">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                马洋露
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                人事专员
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card1_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">10k-15k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -1655,7 +1805,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>产品经理 </p>
-                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card1">
+                                                    <span class="jobs_card_chatme_card1_triangle"></span>
+                                                    <div class="jobs_card_chatme_card1_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/25/CE/CgoB5lzGtCuAOzZ5AAK5HG3xKVc176.png">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                赵絁琳
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                人事
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card1_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">15k-20k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -1681,19 +1854,42 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>美工</p>
-                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card2">
+                                                    <span class="jobs_card_chatme_card2_triangle"></span>
+                                                    <div class="jobs_card_chatme_card2_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/F3/B4/CgotOVyAyqGAPxe1AAECGWqLLXc043.jpg">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                聂金凤
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                招聘经理
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card2_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">6k-10k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
                                             经验3-5年 大专
                                         </div>
-                                        <span class="jobs_card_icon_span"></span>
                                         <div class="main_popular_jobs_summary_label">
                                             <span class="label_word">电商</span>
                                             <span class="label_word">新零售</span>
                                             <span class="label_word">电商美工</span>
                                         </div>
                                     </div>
+                                    <span class="jobs_card_icon_span"></span>
                                     <div class="main_popular_jobs_firm">
                                         <a href="#"><img src="https://www.lgstatic.com/thumbnail_100x100/i/image2/M01/76/8A/CgotOV1TpEmAZqybAACO8GLeLyw534.jpg"></a>
                                         <div>
@@ -1710,7 +1906,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>数据产品经理</p>
-                                        <span class="send_time">[17:04发布]]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card1">
+                                                    <span class="jobs_card_chatme_card1_triangle"></span>
+                                                    <div class="jobs_card_chatme_card1_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/69/62/CgoB5l05ZyKAarWeAAA7sC-I5ug952.png">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                Tiffany
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                人事专员
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card1_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">18k-25k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -1734,7 +1953,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>销售经理(教育软件)</p>
-                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card1">
+                                                    <span class="jobs_card_chatme_card1_triangle"></span>
+                                                    <div class="jobs_card_chatme_card1_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/4D/70/CgoB5l0MM2WATXEMAAEQXfjHicI061.jpg">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                邓碧芯
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                招聘负责人
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card1_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">7k-12k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -1759,7 +2001,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>新媒体运营专员</p>
-                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card2">
+                                                    <span class="jobs_card_chatme_card2_triangle"></span>
+                                                    <div class="jobs_card_chatme_card2_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/92/C5/CgotOV2LfRGALqtcAAR7zGd38bY689.png">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                王琳
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                人事专员
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card2_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">6k-10k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -1785,7 +2050,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>广告商务经理(公众号方向)</p>
-                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card1">
+                                                    <span class="jobs_card_chatme_card1_triangle"></span>
+                                                    <div class="jobs_card_chatme_card1_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/F0/AA/CgotOVx-L7uAc2MwAAOuPSu2e10971.jpg">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                杨小姐
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                人事专员
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card1_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">8k-15k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -1811,7 +2099,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>AI产品经理 </p>
-                                        <span class="send_time">[17:04发布]]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card1">
+                                                    <span class="jobs_card_chatme_card1_triangle"></span>
+                                                    <div class="jobs_card_chatme_card1_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/66/E8/CgotOV01gdyAItdpAABDNTI3kS4786.png">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                欧茗美
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                HRBP
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card1_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">15k-25k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -1837,7 +2148,30 @@
                                     <div class="main_popular_jobs_summary">
                                         <div class="main_popular_jobs_summary_jobsname">
                                         <p>客户端C/C++ 工程师 </p>
-                                        <span class="send_time">[17:04发布]</span>
+                                        <span class="send_time">[17:04发布]
+                                            <div class="jobs_card_chatme">
+                                                <div class="jobs_card_chatme_card2">
+                                                    <span class="jobs_card_chatme_card2_triangle"></span>
+                                                    <div class="jobs_card_chatme_card2_left">
+                                                        <img src="https://www.lgstatic.com/i/image2/M01/02/A0/CgotOVyRrEqAAO51AAED09dNVlw530.jpg">
+                                                        <div class="hr_info">
+                                                            <div class="hr_name">
+                                                                高
+                                                            </div>
+                                                            <div class="hr_position">
+                                                                人事
+                                                            </div>
+                                                        </div>
+                                                        <div class="tips_texts">
+                                                            Hi，对我发布的职位感兴趣？用拉勾APP扫码，直接和我聊聊吧！
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs_card_chatme_card2_right">
+                                                        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2cPoBPC.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
                                         <span class="jobs_salary">20k-40k</span>
                                         </div>
                                         <div class="main_popular_jobs_summary_limit">
@@ -2217,14 +2551,14 @@
                             </div>
                         </a>
                         <p>
-                            <a href="#" class="wechat">拉勾微信
+                            <div href="#" class="wechat">拉勾微信
                                 <img src="https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/layout/img/lg_pic_weixin@2x_c372698.png">
                                 <a class="logo_wechat"></a>
-                            </a>
+                            </div>
                             <span></span>
-                            <a href="#" class="weibo">拉勾微博
+                            <div href="#" class="weibo">拉勾微博
                                 <a class="logo_weibo"></a>
-                            </a>
+                            </div>
                         </p>
                     </div>
                     <div class="inner_wrapper_right">
@@ -2267,7 +2601,6 @@
                     <a class="logo_lagou_icon"></a>   
                 </div>
             </div>
-        </div>
-        
+        </div>       
     </body>
 </html>
