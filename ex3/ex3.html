@@ -227,7 +227,7 @@
                 margin: 0;
                 padding: 6px 16px 10px;
             }
-            .main_jobs li{
+            .main_jobs_factor li,.main_jobs_sort li{
                 display: inline-block;
                 cursor: pointer;
                 float: left;
@@ -239,7 +239,11 @@
                 top: 5px;
                 left: 5px;
             }
-            .main_jobs li:hover{
+            .main_jobs_factor li:hover{
+                background: #00b38a;
+                color: #fff;
+            }
+            .main_jobs_sort li:hover{
                 background: #00b38a;
                 color: #fff;
             }
@@ -597,6 +601,392 @@
                 margin-bottom: 15px;
                 cursor: pointer;
             }
+            .main_jobs_list ul{
+                padding: 0;
+                color: #555;
+            }
+            .main_jobs_list li{
+                list-style: none;
+                margin-top:18px;
+                width: 958px;
+                height: 122px;
+                background: #fafafa;
+                border: 1px solid #ededed; 
+            }
+            .main_jobs_list_position_top{
+                width: 928px;
+                height: 68px;
+                padding: 14px 15px 0px 15px;
+                background: #fff;
+                position: relative;
+            }
+            .main_jobs_list_position_top_positiondate{
+                display: inline-block;
+                width: 528px;
+                height: 68px;
+                margin-right: 20px;
+                position: absolute;
+                top: 14px;
+                left: 15px;
+            }
+            .main_jobs_list_position_top_positiondate_top{
+                position: absolute;
+                top: 8px;
+            }
+            .main_jobs_list_position_top_positiondate_top_name{
+                font-size: 16px;
+                color: #00b38a;
+                cursor: pointer;
+            }
+            .main_jobs_list_position_top_positiondate_top_address{
+                font-size: 16px;
+                color: #00b38a;
+                cursor: pointer;
+            }
+            .main_jobs_list_position_top_positiondate_top_sendtime{
+                color: #999;
+                margin-left:1 3px;
+            }
+            .main_jobs_list_position_top_positiondate_bottom{
+                position: absolute;
+                top: 36px;
+            }
+            .main_jobs_list_position_top_positiondate_bottom_salary{
+                font-size: 16px;
+                color: #FF7452;
+                margin-right: 16px;
+            }
+            .main_jobs_list_position_top_firmdate{
+                display: inline-block;
+                width: 380px;
+                position: absolute;
+                top: 14px;
+                right: 15px;
+            }
+            .main_jobs_list_position_top_firmdate_firmname p{
+                font-size: 16px;
+                color: #00b38a;
+                cursor: pointer;
+                position: absolute;
+                top: -10px;
+            }
+            .main_jobs_list_position_top_firmdate_firmname .firm_mark{
+                display: inline-block;
+                width: 16px;
+                height: 18px;
+                position: absolute;
+                top: 8px;
+                left: 38px;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/search-result/modules/positions/img/approve_aae725a.png);
+                background-repeat: no-repeat;
+                background-position: 0;
+                cursor: pointer;
+            }
+            .main_jobs_list_position_top_firmdate_firmname .firm_mark span{
+                display: none;
+                position: absolute;
+                top: 26px;
+                left: -15px;
+                width: 266px;
+                height: 24px;
+                padding: 10px 12px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #777;
+                border: 2px solid #e7e7e7;
+                background: #fff;
+                z-index: 11;
+            }
+            .main_jobs_list_position_top_firmdate_firmname .firm_mark:hover span{
+                display: block;
+            }
+            .main_jobs_list_position_top_firmdate_firmimg img{
+                border: 1px solid #fafafa;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                cursor:pointer;
+            }
+            .main_jobs_list_position_top_firmdate_firmname span{
+                position: absolute;
+                top: 36px;
+            }
+            .main_jobs_list_position_bottom_left{
+                float: left;
+                width: 528px;
+                height: 40px;
+                margin-right: 20px;
+                line-height: 40px;
+            }
+            .main_jobs_list_position_bottom_left span{
+                display: inline-block;
+                height: 20px;
+                line-height: 20px;
+                padding: 0 5px;
+                margin-right: 5px;
+                font-size: 12px;
+                border: 1px solid #dcdcdc;
+                position: relative;
+                left: 16px;
+            }
+            .main_jobs_list_position_bottom_right{
+                position: relative;
+                top: 10px;
+                right: -5px;
+            }
+            .recommend{
+                position: relative;
+                top: -55px;
+                left: 74.5px;
+                width: 960px;
+                height: 70px;
+                padding-top:23px;
+                margin-bottom: 10px; 
+            }
+            .recommend_firm p{
+                font-size: 16px;
+                position: relative;
+                top: 16px;
+            }
+            .recommend_firm_list ul{
+                display: inline-block;
+                padding: 0;
+                /* width: 900px; */
+                margin-right: 0;
+            }
+            .recommend_firm_list ul li{
+                display: inline-block;
+                list-style: none;
+                text-decoration: underline;
+                color: #00b38a;
+                margin-right: 36px;
+            }
+            .recommend_firm_list span{
+                position: absolute;
+                bottom: -16px;
+                right: 20px;
+                color: #999;
+            }
+            .recommend_firm_list a{
+            position: relative;
+            top: -1px;
+            display: inline-block;
+            width: 12px;
+            height: 7px;
+            margin-left: 2px;
+            background: url(https://www.lgstatic.com/lg-www-fed/search-result/modules/recommendCompanyCity/img/arrow_down_7b6f2e2.png);
+            }
+            .page{
+                width: 353px;
+                margin-left: 378px;
+            }
+            .page span{
+                border: 1px solid #ededed;
+                padding: 3px 10px;
+                margin: 0 5px;
+                /* cursor: pointer; */
+            }
+            .page_previous{
+                color: silver;
+                cursor: default;
+            }
+            .page_current{
+                background: #00b38a;
+                color: #fff;
+                /* cursor: default !important; */
+            }
+            .page_other,.page_next,.page_current{
+                cursor: pointer;
+            }
+            .page_other:hover,.page_next:hover{
+                background: #00b38a;
+                color: #fff;
+            }
+            .splitter{
+                border-top: 1px solid #ebebeb;
+                position: relative;
+                top: 100px;
+            }
+            .foot{
+                width: 1200px;
+                margin: 0 auto;
+                position: relative;
+                top: 100px;
+            }
+            .foot .inner_wrapper{
+                /* padding-top: 10px; */
+                position: relative;
+                top: -16px;
+                display: flex;
+                margin: 49px auto 66px;
+            }
+            .foot .inner_wrapper_left{
+                display: inline-block;
+                border-right: 1px solid #e8e8e8;
+                padding-right: 130px;
+            }
+            .foot_box{
+                text-decoration: none;
+                position: relative;
+                top: 15px;
+                width: 180px;
+                /* width: 387px; */
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                /* font-size: 16px; */
+                border: 1px solid #00b38a;
+                display: block;
+                /* margin: 0 auto; */
+                cursor: pointer;
+                background: #fff;
+                color: #00b38a;
+                /* cursor: pointer; */
+                /* display: block; */
+                /* margin: 0 auto; */
+            }
+            .foot_app:hover{
+                background: #00b38a;
+                color: #fff;
+            }
+            .foot_app{
+                margin-bottom:16px; 
+            }
+            .foot_mina{
+                margin-bottom:16px; 
+            }
+            .foot_mina:hover{
+                background: #00b38a;
+                color: #fff;
+            }
+            .foot_mina:hover div img{
+                display: inline-block;
+            }
+            .foot_mina div img{
+                display: none; 
+                width: 140px;
+                height: 140px;
+                box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+                position: absolute;
+                z-index: 10000;
+                top: 0px;
+                right: -150px;
+            }
+            .inner_wrapper_left .wechat{
+                display: inline-block;
+                height: 30px;
+                color: #555;
+                text-decoration: none;
+                position: relative;
+                top: 15px;
+                left: 19px;
+                cursor: pointer;
+            }
+            .inner_wrapper_left .weibo{
+                cursor: pointer;
+                display: inline-block;
+                color: #555;
+                text-decoration: none;
+                position: relative;
+                top: 15px;
+                left: 65px;
+            }
+            .inner_wrapper_left .wechat:hover{
+                color: #00b38a;
+            }
+            .inner_wrapper_left .weibo:hover{
+                color: #00b38a;
+            }
+            .inner_wrapper_left .wechat:hover img{
+                display: block;
+            }
+            .inner_wrapper_left .wechat img{
+                display: none; 
+                width: 140px;
+                height: 140px;
+                box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+                position: absolute;
+                z-index: 10000;
+                top: 30px;
+                right: -60px;
+            }
+            .inner_wrapper_left p span{
+                display: inline-block;
+                width: 61px;
+            }
+            .foot .inner_wrapper_right{
+                margin-left: 130px;
+                flex: 1;
+                display: flex;
+            }
+            .inner_wrapper_right div{
+                flex: 1;
+            }
+            .inner_wrapper_right p{
+                font-size: 18px;
+                font-weight: 600;
+                color: #555;
+                margin-bottom: 30px;
+            }
+            .inner_wrapper_right a,.inner_wrapper_right span{
+                display: block;
+                color: #555;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+            .inner_wrapper_right a:hover{
+                color: #00b38a;
+            }
+            .copyright{
+                height: 100px;
+                background-color: #fafafa;
+                position: relative;
+                top: 75px;
+            }
+            .copyright div{
+                color: #999;
+                margin: 28px auto;
+                /* position: relative;
+                left: 74.5px; */
+                height: 60px;
+                width: 1200px;
+            }
+            .copyright a{
+                text-decoration: none;
+                color: #999;
+                /* margin-left: 20px; */
+            }
+            .copyright .police{
+                position: relative;
+                left: 31px;
+            }
+            .copyright .filing:hover{
+                color: #555;
+            }
+            .copyright .police:hover{
+                color: #555;
+            }
+            .copyright p{
+                /* color: #999; */
+                font-size: 12px;
+                display: inline-block;
+                /* padding: 0 5px; */
+                /* width: 100px;
+                height: 100px; */
+                border: 1px solid #d5dadf;
+                padding: 8px 20px 8px 50px;
+                margin-left: 20px;
+                position: relative;
+                top: 15px;
+                left: 35px;
+            }
+            .copyright span{
+                display: block;
+                line-height: 14px;
+                margin: 0;
+            }
             .logo{
                 display: block;
                 background-image: url(https:///www.lgstatic.com/lg-www-fed/common/widgets/header_c/modules/img/sprite_361857f.png);
@@ -655,6 +1045,104 @@
             }
             .rocket:hover{
                 background-position: right;
+            }
+            .logo_police{
+                display: block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
+                background-position: -150px -184px;
+                /* background-size: 150%; */
+                position: absolute;
+                left: 334px;
+                bottom: 36px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+            }
+            .logo_jubao{
+                display: block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
+                background-position: -132px -20px;
+                /* background-size: 150%; */
+                position: absolute;
+                left: 21px;
+                bottom: 17px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 24px;
+                /* cursor: pointer; */
+            }
+            .logo_lagou_icon{
+                display: block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/footer_lagou_icon_75f0ebc.png);
+                background-position: 0px -0px;
+                /* background-size: 150%; */
+                position: absolute;
+                right: 74.5px;
+                bottom: 35px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 198px;
+                height: 19px;
+                /* cursor: pointer; */
+            }
+            .logo_wechat{
+                display: inline-block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
+                background-position: -114px -184px;
+                /* background-size: 150%; */
+                position: absolute;
+                left: -22px;
+                bottom: 4px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 24px;
+                cursor: pointer;
+            }
+            .inner_wrapper_left .wechat:hover .logo_wechat{
+                display: block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
+                background-position: -114px -220px;
+                /* background-size: 150%; */
+                position: absolute;
+                left: -22px;
+                bottom: 4px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 24px;
+                cursor: pointer;
+            }
+            .logo_weibo{
+                display: inline-block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
+                background-position: -214px -20px;
+                /* background-size: 150%; */
+                position: absolute;
+                left: -22px;
+                bottom: -7px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 24px;
+                cursor: pointer;
+            }
+            .inner_wrapper_left .weibo:hover .logo_weibo{
+                display: block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/sprite_9dd5c92.png);
+                background-position: -172px -20px;
+                /* background-size: 150%; */
+                position: absolute;
+                left: -22px;
+                bottom: -7px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 24px;
+                cursor: pointer;
             }
         </style>
     </head>
@@ -930,7 +1418,700 @@
                         </div>
                     </div>
                 </div>
-                <div class="main_jobs_list"></div>
+                <div class="main_jobs_list">
+                    <ul>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_jobs_list_position">
+                                <div class="main_jobs_list_position_top">
+                                    <div class="main_jobs_list_position_top_positiondate">
+                                        <div class="main_jobs_list_position_top_positiondate_top">
+                                            <span class="main_jobs_list_position_top_positiondate_top_name">
+                                                Web前端开发
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_address">
+                                                [长沙·岳麓区]
+                                            </span>
+                                            <span class="main_jobs_list_position_top_positiondate_top_sendtime">
+                                                2019-09-21
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_positiondate_bottom">
+                                            <span class="main_jobs_list_position_top_positiondate_bottom_salary">10k-18k</span>
+                                            经验5-10年 / 本科
+                                        </div>
+                                    </div>
+                                    <div class="main_jobs_list_position_top_firmdate">
+                                        <div class="main_jobs_list_position_top_firmdate_firmname">
+                                            <p>亚信</p>
+                                            <a class="firm_mark">
+                                                <span>该企业已上传营业执照并通过资质验证审核</span>
+                                            </a>
+                                            <span>
+                                                企业服务,移动互联网 / 上市公司 / 2000人以上
+                                            </span>
+                                        </div>
+                                        <div class="main_jobs_list_position_top_firmdate_firmimg">
+                                            <img src="https://www.lgstatic.com/thumbnail_120x120/i/image2/M01/A1/42/CgotOVvS-F2ARLCqAAGhhVXKtLw993.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_jobs_list_position_bottom">
+                                    <div class="main_jobs_list_position_bottom_left">
+                                        <span>前端开发</span>
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="main_jobs_list_position_bottom_right">
+                                        “五险一金,年底双薪,项目奖,年度绩效奖”
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="main_right">
                 <div class="main_right_recently">
@@ -996,6 +2177,101 @@
                         <img src="https://www.lgstatic.com/i/image2/M01/91/04/CgotOV2IZ4WAIjY_AABTDCYP8mM527.JPG">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="recommend_firm">
+                <p>推荐公司:</p>
+                <div class="recommend_firm_list">
+                    <ul>
+                        <li>美柚</li>
+                        <li>喜马拉雅fm</li>
+                        <li>微盟</li>
+                        <li>淘粉吧</li>
+                        <li>熊猫TV</li>
+                        <li>易到用车</li>
+                        <li>小红唇</li>
+                        <li>汽车超人</li>
+                        <li>蚂蜂窝</li>
+                        <li>三好网</li>
+                        <li>唯品会</li>
+                    </ul>
+                    <span>展开</span>
+                    <a></a>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <span class="page_previous">上一页</span>
+            <span class="page_current">1</span>
+            <span class="page_other">2</span>
+            <span class="page_other">3</span>
+            ...
+            <span class="page_other">30</span>
+            <span class="page_next">下一页</span>
+        </div>
+        <div class="splitter"></div>
+        <div class="foot">
+            <div class="inner_wrapper">
+                <div class="inner_wrapper_left">
+                    <a href="#" class="foot_app foot_box">
+                        下载拉勾APP
+                    </a>
+                    <a href="#" class="foot_mina foot_box">
+                        微信小程序
+                        <div>
+                            <img src="https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/layout/img/lagou-mina-code_d70848a.png">
+                        </div>
+                    </a>
+                    <p>
+                        <div href="#" class="wechat">拉勾微信
+                            <img src="https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/layout/img/lg_pic_weixin@2x_c372698.png">
+                            <a class="logo_wechat"></a>
+                        </div>
+                        <span></span>
+                        <div href="#" class="weibo">拉勾微博
+                            <a class="logo_weibo"></a>
+                        </div>
+                    </p>
+                </div>
+                <div class="inner_wrapper_right">
+                    <div>
+                        <p>企业服务</p>
+                        <a href="#">招聘抢人宝典</a>
+                        <a href="#">公司搜索</a>
+                        <a href="#">拉勾APP</a>
+                    </div>
+                    <div>
+                        <p>用户帮助</p>
+                        <a href="#">帮助中心</a>
+                        <a href="#">用户服务协议</a>
+                        <a href="#">隐私政策</a>
+                        <a href="#">在线提问</a>
+                    </div>
+                    <div>
+                        <p>联系方式</p>
+                        <span>服务热线：4006 2828 35 (9:00 -18:00)</span>
+                        <a href="#">企业服务邮箱：cc@lagou.com</a>
+                        <a href="#">联系我们</a>
+                    </div>
+                </div>
+            </div>              
+        </div>
+        <div class="copyright">
+            <div>
+                ©2018 拉勾网
+                <a href="#" class="filing">京ICP备14023790号-2</a>
+                <a href="#" class="police">
+                    京公网安备 11010802024043号
+                    <a class="logo_police"></a>     
+                </a>
+                <p>
+                    <a class="logo_jubao"></a>
+                    <span>违法和不良信息举报</span>
+                    <span>电话: 4006 2828 35</span>
+                    <span>邮箱: cc@lagou.com</span>
+                </p>
+                <a class="logo_lagou_icon"></a>   
             </div>
         </div>
     </body>
