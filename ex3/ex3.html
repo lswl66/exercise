@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ex3拉勾
+        </title>
+        <style>
+            body{
+                margin: 0 ;
+                font-size: 14px;
+                color: #333;
+                position: relative;
+            }
+             .menu{
+                height: 40px;
+                background: #333;
+                color: #afb5c0;
+                line-height: 10px;
+            }
+            .menu_son_passport{
+                position: relative;
+                right: -45px;
+                cursor: pointer;
+            }
+            .menu_son span{
+                display: inline-block;
+                width: 42px;
+                position: relative;
+                top: 15px;
+                left: 55px;
+                color: #00b38a;
+            }
+            .menu_son li{
+                padding-right: 38px;
+                cursor: pointer;
+            }
+            .menu li:hover{
+                color: #fff;
+            }
+            .menu p:hover{
+                color: #fff;
+            }
+            .menu_son{
+                position:relative;
+                /* left: 100px; */
+                width: 1166px;
+                margin: 0 auto;
+                display: flex; 
+            }
+            .menu_son p{
+                padding-right: 18px;
+                display: inline-block;
+            }
+            .menu_son ul li{
+                display: inline-block;
+            }
+            .menu_son ul li span{
+                display: inline-block;
+                font-size: 12px;
+                width: 29px;
+                text-align: center;
+                line-height: 16px;
+                position: absolute;
+                top: -12px;
+                left: 234px;
+                color: #fff;
+                padding-bottom: 2px;
+                background: #FF7452;
+                border-radius: 9px;
+                /* border: 5px solid #FF7452; */
+            }
+            .menu_son menu_son_country {
+                flex: 1;
+            }
+            .menu_son ul {
+                position: relative;
+                left: 45px;
+                top: 2px;
+                width: 800px;
+                list-style: none;
+            }
+            .menu_son_app{
+                display: inline-block;
+                position: relative;
+                right: -87px;
+                height: 38px;
+                line-height: 38px;
+                color: #00b38a;
+                cursor: pointer;
+            }
+            .menu_son_app:hover{
+                color: #05eaaf;
+            }
+            .menu_son_firm{
+                display: inline-block;
+                position: relative;
+                top: 13px;
+                right: -114px;
+                color: #afb5c0;
+                cursor: pointer;
+            }
+            .menu_son_firm:hover{
+                color: #fff;
+            }
+            .search_wrapper{
+                background: #F2F5F4;
+                height:180px;
+                margin-bottom: 35px;
+            }
+            .search_bar{       
+                font-size: 16px;
+                color: #999;
+                margin:0 auto;    
+                width: 1200px;  
+                display: block;
+                float: left;
+                position: relative;
+                left:74.5px;
+                top:29px;
+            }
+            .search_bar p{
+                height: 13px;
+                margin: 0;
+            }
+            .search_wrapper_profession{
+                display: inline-block;
+                position: relative;
+                background: #00b38a;
+                color: #fff;
+                margin-right: 7px;
+                padding: 7px 10px;
+                height: 16px;
+                line-height: 16px;
+                width: 97px;
+            }
+            .search_wrapper_firm{
+                position: relative;
+                left: 10px;
+            }
+            .search_box{
+                /* display: block; */
+                height: 20px;
+                line-height: 20px;
+                text-align: left;
+                padding: 12px 15px;
+                border: 1px;
+                width: 791px;
+                margin: 0 auto;
+                font-size: 16px;
+            }
+            .search_button{
+                position: relative;
+                left: -4px;
+                top: 1px;
+                font-size: 18px;
+                border: 0px;
+                padding: 0px;
+                height: 46px;
+                width: 142px;
+                background: #00b38a;
+                color: #fff;
+                cursor: pointer;
+            }
+            .search_about{
+                font-size: 14px;
+                height: 19px;
+                position: relative;
+                top: -5px;
+                cursor: pointer;
+            }
+            .search_about span{
+                color: #777
+            }
+            .search_about ul{
+                list-style: none;
+                display: inline-block;
+                padding-left: 0px;
+            }
+            .search_about li{
+                padding-left: 18px;
+                display: inline-block;
+            }
+            .search_about ul :hover{
+                color: #00b38a;
+            }
+            .main{
+                position: relative;
+                width: 1200px;
+                display: flex;
+                margin: 0 auto;
+            }
+            .main_jobs{
+                width: 960px;
+                display: inline-block;
+                margin-bottom: 18px;
+            }
+            .main_jobs_factor{
+                height: 220px;
+                background: #fafafa;
+                border: 1px solid #ededed;
+                padding: 6px 0;
+                position: relative;
+            }
+            .main_jobs_factor span{
+                font-weight: 600;
+                margin-right: -5px;
+                position: relative;
+                top: -12px;
+                left: 17px;
+            }
+            .main_jobs_factor a{
+                display: inline-block;
+                width: 28px;
+                height: 14px;
+                line-height: 14px;
+                position: relative;
+                top: -12px;
+                left: 21px;
+                background: #00b38a;
+                color: #fff;
+                cursor: pointer;
+            }
+            .main_jobs_factor_ul{
+                display: inline-block;
+                list-style: none;
+                width: 740px;
+                margin: 0;
+                padding: 6px 16px 10px;
+            }
+            .main_jobs li{
+                display: inline-block;
+                cursor: pointer;
+                float: left;
+                margin-right: 5px;
+                padding: 6px 16px;
+                height: 14px;
+                line-height: 14px;
+                position: relative;
+                top: 5px;
+                left: 5px;
+            }
+            .main_jobs li:hover{
+                background: #00b38a;
+                color: #fff;
+            }
+            .main_jobs_factor_top{
+                position: relative;
+                top: -5px;
+                height: 40px;
+            }
+            .main_jobs_factor_top a{
+                background: #fff;
+                color: #333;
+                cursor: auto;
+            }
+            .main_jobs_factor_other{
+                position: relative;
+                top: -7px;
+                height: 36px;
+            }
+            .main_jobs_factor_bottom{
+                position: relative;
+                top: -5px;
+                height: 36px;
+            }
+            .main_jobs_factor li,.main_jobs_factor span,.main_jobs_factor a{
+                padding: 5px 8px;
+            }
+            .main_jobs_factor_top_more{
+                display: none;
+                background: #fff;
+                width: 958px;
+                height: 97px;
+                position: absolute;
+                top: -14px;
+                right: -33px;
+                z-index: 10;
+                border: 1px solid #ededed;
+            }
+            .main_jobs_factor_top_more_hotcity{
+                display: inline-block;
+                list-style: none;
+                /* width: 740px; */
+                margin: 0;
+                padding: 6px 16px 10px;
+                position: relative;
+                top: -1px;
+            }
+            .main_jobs_factor_top_more_othercity{
+                display: inline-block;
+                list-style: none;
+                /* width: 740px; */
+                margin: 0;
+                padding: 0px 16px 10px;
+                position: relative;
+                top: -8px;
+                padding-bottom: 14px;
+                border-top: 1px dashed #ededed;
+            }
+            .main_jobs_factor_top_more a{
+                display: inline-block;
+                width: 28px;
+                height: 14px;
+                line-height: 14px;
+                position: relative;
+                top: -13px;
+                left: 21px;
+                background: #00b38a;
+                color: #fff;
+                cursor: pointer;
+            }
+            .main_jobs_factor_top_more .main_jobs_factor_top_more_allcity{
+                color: #00b38a;
+                font-weight: normal;
+                position: absolute;
+                top: 66px;
+                left: 670px;
+                cursor: pointer;
+            }
+            .main_jobs_factor_top_more .main_jobs_factor_top_more_location{
+                font-weight: 600;
+                margin-right: -5px;
+                position: relative;
+                top: -13px;
+                left: 17px;
+            }
+            .more_btn_top:hover .main_jobs_factor_top_more{
+                display: block;
+            }
+            .more_btn_top .main_jobs_factor_top_more{
+                position: absolute;
+                /* z-index: 11; */
+                top: 1px;
+                right: -1px;
+            }
+            .more_btn_bottom .main_jobs_factor_bottom_more{
+                position: absolute;
+                /* z-index: 11; */
+                top: 189px;
+                right: -1px;
+            }
+            .main_jobs_factor .more_btn{
+                position: absolute;
+                z-index: 11;
+            }
+            .more_btn_top .more_btn{
+                position: absolute;
+                top: 0px;
+                right: 32px;
+            }
+            .more_btn_bottom .more_btn{
+                position: absolute;
+                bottom: 0px;
+                right: 32px;
+            }
+            .main_jobs_factor_bottom_more{
+                display: none;
+                background: #fff;
+                width: 958px;
+                height: 96px;
+                position: absolute;
+                top: -6px;
+                right: -33px;
+                z-index: 10;
+                border: 1px solid #ededed;
+            }
+            .main_jobs_factor_bottom_more_hotindustry{
+                display: inline-block;
+                list-style: none;
+                /* width: 740px; */
+                margin: 0;
+                height: 24px;
+                padding: 6px 16px 10px;
+                position: relative;
+                top: -5px;
+            }
+            .main_jobs_factor_bottom_more_otherindustry{
+                display: inline-block;
+                list-style: none;
+                margin: 0;
+                padding: 6px 16px 10px;
+                position: relative;
+                top: -13px;
+                padding-bottom: 14px;
+                border-top: 1px dashed #ededed;
+            }
+            .main_jobs_factor_bottom_more a{
+                display: inline-block;
+                width: 28px;
+                height: 14px;
+                line-height: 14px;
+                position: relative;
+                top: -17px;
+                left: 21px;
+                background: #00b38a;
+                color: #fff;
+                cursor: pointer;
+            }
+            .main_jobs_factor_bottom_more .main_jobs_factor_bottom_more_industry{
+                font-weight: 600;
+                margin-right: -5px;
+                position: relative;
+                top: -17px;
+                left: 17px;
+            }
+            .more_btn_bottom:hover .main_jobs_factor_bottom_more{
+                display: block;
+            }
+            .main_jobs_btn a{
+                display: block;
+                margin: 0 auto;
+                height: 16px;
+                width: 36px;
+                background: #fafafa;
+                position: relative;
+                top: -1px;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/search-result/modules/filter/img/arrow_up_b7a7618.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 1px solid #ededed;
+                border-top: 0;
+                cursor: pointer;
+            }
+            .main_jobs_sort{
+                background: #fafafa;
+                margin-top: 9px;
+                border: 1px solid #ededed;
+                position: relative;
+                height: 43px;
+                line-height: 43px;
+            }
+            .main_jobs_sort_order span{
+                font-weight: 600;
+                position: absolute;
+                top: 0px;
+                left: 24px;
+            }
+            .main_jobs_sort_order a{
+                color: #fff;
+                background: #00b38a;
+                width: 28px;
+                height: 14px;
+                line-height: 14px;
+                padding: 5px 8px;   
+                display: inline-block;
+                position: absolute;
+                top: 9.5px;
+                left: 96px;
+                cursor: pointer;
+            }
+            .main_jobs_sort_order li{
+                position: absolute;
+                top: 9.5px;
+                left: 145px;
+                padding: 5px 8px;
+            }
+            .main_jobs_sort_salary span{
+                font-weight: 600;
+                position: absolute;
+                top: 0px;
+                left: 232px;
+            }
+            .main_jobs_sort_salary div{
+                display: inline-block;
+                background: #fff;
+                padding: 0 10px 0 5px;
+                width: 70px;
+                border: 1px solid #f3f3f3;
+                height: 22px;
+                line-height: 22px;
+                position: absolute;
+                top: 9.5px;
+                left: 282px;
+            }
+            .main_jobs_sort_salary p{
+                position: absolute;
+                top: -14px;
+                left: 6px;
+            }
+            .main_jobs_sort_type span{
+                font-weight: 600;
+                position: absolute;
+                top: 0px;
+                left: 409px;
+            }
+            .main_jobs_sort_type div{
+                display: inline-block;
+                background: #fff;
+                padding: 0 10px 0 5px;
+                width: 70px;
+                border: 1px solid #f3f3f3;
+                height: 22px;
+                line-height: 22px;
+                position: absolute;
+                top: 9.5px;
+                left: 490px;
+            }
+            .main_jobs_sort_type p{
+                position: absolute;
+                top: -14px;
+                left: 6px;
+            }
+            .main_jobs_sort_page{
+                position: absolute;
+                right: 0px;
+                border-left: 1px solid #ededed;
+                height: 23px;
+                width: 119px;
+                padding: 10px 0;
+            }
+            .main_jobs_sort_page a{
+                cursor: pointer;
+                color: #e0e0e0;
+                font-size: 20px;
+            }
+            .main_jobs_sort_page span{
+                position: absolute;
+                right: 38px;
+                top: 0px;
+            }
+            .main_jobs_sort_page .curnum{
+                color: #00b38a;
+                position: absolute;
+                right: 70px;
+            }
+            .main_jobs_sort_page .prev{
+                position: absolute;
+                right: 96px;
+                top: 0px;
+            }
+            .main_jobs_sort_page .next{
+                position: absolute;
+                right: 7px;
+                top: 0px;
+            }
+            .main_right{
+                flex: 1;
+                display: inline-block;
+                width: 210px;
+                height: 901px;
+                position: absolute;
+                right: 0px;
+            }
+            .main_right_recently{
+                background: #fafafa;
+                width: 210px;
+                height: 470px;
+                padding-bottom: 5px;
+                position: relative;
+                top:0px;
+                margin-bottom: 15px;
+            }
+            .main_right_recently p{
+                font-size: 18px;
+                margin: 0 0 2px 15px;
+                padding-top:12px;
+            }
+            .main_right_recently ul{
+                list-style:none;
+                background: #fff;
+                margin: 5px 5px 0;
+                padding: 0px;
+                width: 200px;
+                height: 429px;
+            }
+            .main_right_recently ul :last-child{
+                border: 0;
+            }
+            .main_right_recently div{
+                display: inline-block;
+                position: relative;
+                top: 10px;
+            }
+            .main_right_recently li{
+                border-bottom:1px dashed #e8e8e8;
+                padding: 0 10px;
+                width:180px;
+                height: 85px; 
+                font-size: 14px;
+            }
+            .main_right_recently a:hover{
+                color: #00b38a;
+            }
+            .main_right_recently .main_right_recently_salary{
+                color: #fd5f39;
+                font-size: 14px;
+                margin: 0;
+                padding: 5px 0 0 0;
+            }
+            .main_right_recently .main_right_recently_firm{
+                font-size: 12px;
+                color: #999;
+                margin: 0;
+                padding: 5px 0 0 0;
+            }
+            .main_right_ad div{
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+            .logo{
+                display: block;
+                background-image: url(https:///www.lgstatic.com/lg-www-fed/common/widgets/header_c/modules/img/sprite_361857f.png);
+                background-position: -10px -10px;
+                background-size: 150%;
+                position: absolute;
+                left: -28px;
+                top: 8px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 43px;
+                height: 21px;
+                cursor: pointer;
+            }
+            .logo_head{
+                display: block;
+                background-image: url(https:///www.lgstatic.com/lg-www-fed/common/widgets/header_c/modules/img/sprite_361857f.png);
+                background-position: -76px -136px;
+                /* background-size: 150%; */
+                position: absolute;
+                right: 112px;
+                top: 10px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+            }
+            .loge_phone{
+                display: block;
+                background-image: url(https:///www.lgstatic.com/lg-www-fed/common/widgets/header_c/modules/img/sprite_361857f.png);
+                background-position: -64px -212px;
+                /* background-size: 150%; */
+                position: absolute;
+                right: 53px;
+                top: 10px;
+                z-index: 100000;
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+            }
+            .rocket{
+                display: block;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/backtop-new_0e4bcbc.png);
+                /* background-size: 100%; */
+                background-position: left top;
+                position: fixed;
+                right: 40px;
+                bottom: 95px;
+                z-index: 1000000;
+                background-repeat: no-repeat;
+                width: 28px;
+                height: 46px;
+                cursor: pointer;
+            }
+            .rocket:hover{
+                background-position: right;
+            }
+        </style>
+    </head>
+    <body>
+        <a class="rocket"></a>
+        <div class="menu">
+            <div class="menu_son">
+                <div class="menu_son_country">
+                    <a class="logo"></a>
+                </div>
+                <ul>
+                    <li>首页</li>
+                    <li>公司</li>
+                    <li>校园招聘
+                        <span>new</span>
+                    </li>
+                    <li>言职</li>
+                    <li>课程</li>
+                </ul>
+                <div class="menu_son_passport"> 
+                    <a class="logo_head"></a>
+                    <p>登录</p>
+                    <p>注册</p>
+                </div>
+                <div class="menu_son_app">
+                    拉勾APP
+                    <a class="loge_phone"></a>
+                </div>
+                <div class="menu_son_firm">进入企业版</div>
+            </div>
+        </div>
+        <div class="search_wrapper">
+            <div class="search_bar">
+                <span class="search_wrapper_profession">职位 ( 500+ ) </span>
+                <span class="search_wrapper_firm">公司 ( 0 ) </span>
+                <p></p>
+                <div>
+                    <input type="text" name="search" value="web前端" class="search_box">
+                    <button class="search_button">
+                        搜索
+                    </button>
+                </div>
+                <div class="search_about">
+                    <span>相关搜索:</span>
+                    <ul>
+                        <li>html5</li>
+                        <li>javascript</li>
+                        <li>web</li>
+                        <li>html5前端</li>
+                        <li>node.js</li>
+                        <li>前端实习</li>
+                        <li>web前端助理</li>
+                        <li>全栈</li>
+                        <li>php</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_jobs">
+                <div class="main_jobs_factor">
+                    <div class="main_jobs_factor_top">
+                        <span>工作地点:</span>
+                        <a class="main_jobs_factor_top_country">全国</a>
+                        <ul class="main_jobs_factor_ul">
+                            <li>北京</li>
+                            <li>上海</li>
+                            <li>深圳</li>
+                            <li>广州</li>
+                            <li>杭州</li>
+                            <li>成都</li>
+                            <li>南京</li>
+                            <li>武汉</li>
+                            <li>西安</li>
+                            <li>厦门</li>
+                            <li>长沙</li>
+                            <li>苏州</li>
+                            <li>天津</li>
+                        </ul>
+                    </div>
+                    <div class="main_jobs_factor_other">
+                        <span>工作经验:</span>
+                        <a class="main_jobs_factor_top_country">不限</a>
+                        <ul class="main_jobs_factor_ul">
+                            <li>应届毕业生</li>
+                            <li>3年及以下</li>
+                            <li>3-5年</li>
+                            <li>5-10年</li>
+                            <li>10年以上</li>
+                            <li>不要求</li>
+                        </ul>
+                    </div>
+                    <div class="main_jobs_factor_other">
+                        <span>学历要求:</span>
+                        <a class="main_jobs_factor_top_country">不限</a>
+                        <ul class="main_jobs_factor_ul">
+                            <li>大专</li>
+                            <li>本科</li>
+                            <li>硕士</li>
+                            <li>博士</li>
+                            <li>不要求</li>
+                        </ul>
+                    </div>
+                    <div class="main_jobs_factor_other">
+                        <span>融资阶段:</span>
+                        <a class="main_jobs_factor_top_country">不限</a>
+                        <ul class="main_jobs_factor_ul">
+                            <li>未融资</li>
+                            <li>天使轮</li>
+                            <li>A轮</li>
+                            <li>B轮</li>
+                            <li>C轮</li>
+                            <li>D轮及以上</li>
+                            <li>上市公司</li>
+                            <li>不需要融资</li>
+                        </ul>
+                    </div>
+                    <div class="main_jobs_factor_other">
+                        <span>公司规模:</span>
+                        <a class="main_jobs_factor_top_country">不限</a>
+                        <ul class="main_jobs_factor_ul">
+                            <li>少于15人</li>
+                            <li>15-50人</li>
+                            <li>50-150人</li>
+                            <li>150-500人</li>
+                            <li>500-2000人</li>
+                            <li>2000人以上</li>
+                        </ul>
+                    </div>
+                    <div class="main_jobs_factor_bottom">
+                        <span>行业领域:</span>
+                        <a class="main_jobs_factor_bottom_country">不限</a>
+                        <ul class="main_jobs_factor_ul">
+                            <li>移动互联网</li>
+                            <li>电商</li>
+                            <li>金融</li>
+                            <li>企业服务</li>
+                            <li>教育</li>
+                            <li>文娱丨内容</li>
+                            <li>游戏</li>
+                            <li>消费生活</li>
+                            <li>硬件</li>
+                        </ul>
+                    </div>
+                    <div class="more_btn_top">
+                        <p class="more_btn">更多</p> 
+                        <div class="main_jobs_factor_top_more">
+                            <span class="main_jobs_factor_top_more_location">工作地点:</span>
+                            <a class="main_jobs_factor_top_country">全国</a>
+                            <ul class="main_jobs_factor_top_more_hotcity">
+                                <li>北京</li>
+                                <li>上海</li>
+                                <li>深圳</li>
+                                <li>广州</li>
+                                <li>杭州</li>
+                                <li>成都</li>
+                                <li>南京</li>
+                                <li>武汉</li>
+                                <li>西安</li>
+                                <li>厦门</li>
+                                <li>长沙</li>
+                                <li>苏州</li>
+                                <li>天津</li>
+                            </ul>
+                            <ul class="main_jobs_factor_top_more_othercity">
+                                <li>重庆</li>
+                                <li>郑州</li>
+                                <li>青岛</li>
+                                <li>合肥</li>
+                                <li>福州</li>
+                                <li>济南</li>
+                                <li>大连</li>
+                                <li>珠海</li>
+                                <li>无锡</li>
+                                <li>佛山</li>
+                                <li>东莞</li>
+                                <li>宁波</li>
+                                <li>常州</li>
+                                <li>沈阳</li>
+                                <li>石家庄</li>
+                                <li>昆明</li>
+                                <li>南昌</li>
+                                <li>南宁</li>
+                                <li>哈尔滨</li>
+                                <li>海口</li>
+                                <li>中山</li>
+                                <li>惠州</li>
+                                <li>贵阳</li>
+                                <li>长春</li>
+                                <li>太原</li>
+                                <li>嘉兴</li>
+                                <li>泰安</li>
+                                <li>昆山</li>
+                                <li>烟台</li>
+                                <li>兰州</li>
+                                <li>泉州</li>
+                            </ul>
+                            <span class="main_jobs_factor_top_more_allcity">
+                                全部城市 >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="more_btn_bottom">
+                        <p class="more_btn">更多</p>
+                        <div class="main_jobs_factor_bottom_more">
+                            <span class="main_jobs_factor_bottom_more_industry">行业领域:</span>
+                            <a class="main_jobs_factor_bottom_a">不限</a>
+                            <ul class="main_jobs_factor_bottom_more_hotindustry">
+                                <li>移动互联网</li>
+                                <li>电商</li>
+                                <li>金融</li>
+                                <li>企业服务</li>
+                                <li>教育</li>
+                                <li>文娱丨内容</li>
+                                <li>游戏</li>
+                                <li>消费生活</li>
+                                <li>硬件</li>
+                            </ul>
+                            <ul class="main_jobs_factor_bottom_more_otherindustry">
+                                <li>社交</li>
+                                <li>旅游</li>
+                                <li>体育</li>
+                                <li>工具</li>
+                                <li>汽车丨出行</li>
+                                <li>物流丨运输</li>
+                                <li>医疗丨健康</li>
+                                <li>广告营销</li>
+                                <li>数据服务</li>
+                                <li>信息安全</li>
+                                <li>人工智能</li>
+                                <li>区块链</li>
+                                <li>物联网</li>
+                                <li>VR丨AR</li>
+                                <li>软件开发</li>
+                                <li>通讯电子</li>
+                                <li>房产家居</li>
+                                <li>其他</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_jobs_btn">
+                    <a></a>
+                </div>
+                <div class="main_jobs_sort">
+                    <div class="main_jobs_sort_order">
+                        <span>排序方式:</span>
+                        <a>默认</a>
+                        <li>最新</li>
+                    </div>
+                    <div class="main_jobs_sort_salary">
+                        <span>月薪:</span>
+                        <div>
+                            <p>不限</p>
+                        </div>
+                    </div>
+                    <div class="main_jobs_sort_type">
+                        <span>工作性质:</span>
+                        <div>
+                            <p>不限</p>
+                        </div>
+                    </div>
+                    <div class="main_jobs_sort_page">
+                        <a class="prev"><</a>
+                        <a class="next">></a>
+                        <div class="page_number">
+                            <span class="curnum">
+                                1 
+                            </span>
+                            <span class="totalnum">
+                                / 30
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_jobs_list"></div>
+            </div>
+            <div class="main_right">
+                <div class="main_right_recently">
+                    <p>最近浏览过</p>
+                    <ul>
+                        <li>
+                            <div>
+                                <a class="main_right_recently_jobs">
+                                    测试工程师-【新产品】
+                                </a>
+                                <p class="main_right_recently_salary">20k-30k</p>
+                                <p class="main_right_recently_firm">快手</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="main_right_recently_jobs">
+                                    测试开发工程师
+                                </a>
+                                <p class="main_right_recently_salary">20k-40k</p>
+                                <p class="main_right_recently_firm">快手</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="main_right_recently_jobs">
+                                    测试工程师
+                                </a>
+                                <p class="main_right_recently_salary">
+                                    10k-20k
+                                </p>
+                                <p class="main_right_recently_firm">叶道科技</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="main_right_recently_jobs">
+                                    游戏内容标签运营
+                                </a>
+                                <p class="main_right_recently_salary">7k-10k</p>
+                                <p class="main_right_recently_firm">YIDATEC</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="main_right_recently_jobs">
+                                    前端工程师
+                                </a>
+                                <p class="main_right_recently_salary">3k-6k</p>
+                                <p class="main_right_recently_firm">知韬科技</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_right_ad">
+                    <div class="main_right_ad_1">
+                        <img src="https://www.lgstatic.com/i/image2/M01/8E/8A/CgoB5l2B-kGAMF8sAAB_EG3HcVQ558.PNG">
+                    </div>
+                    <div class="main_right_ad_2">
+                        <img src="https://www.lgstatic.com/i/image2/M01/90/B1/CgoB5l2ILkqAS23cAAB43OX6BYo464.JPG">
+                    </div>
+                    <div class="main_right_ad_3">
+                        <img src="https://www.lgstatic.com/i/image2/M01/91/04/CgotOV2IZ4WAIjY_AABTDCYP8mM527.JPG">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
