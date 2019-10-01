@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            拉勾ex4
+        </title>
+        <style>
+              body{
+                margin: 0 ;
+                font-size: 14px;
+                color: #333;
+                position: relative;
+            }
+             .menu{
+                height: 40px;
+                background: #333;
+                color: #afb5c0;
+                line-height: 10px;
+            }
+            .menu_son_passport{
+                position: relative;
+                right: -45px;
+                cursor: pointer;
+            }
+            .menu_son span{
+                display: inline-block;
+                width: 42px;
+                position: relative;
+                top: 15px;
+                left: 55px;
+                color: #00b38a;
+            }
+            .menu_son li{
+                padding-right: 38px;
+                cursor: pointer;
+            }
+            .menu li:hover{
+                color: #fff;
+            }
+            .menu p:hover{
+                color: #fff;
+            }
+            .menu_son{
+                position:relative;
+                /* left: 100px; */
+                width: 1166px;
+                margin: 0 auto;
+                display: flex; 
+            }
+            .menu_son p{
+                padding-right: 18px;
+                display: inline-block;
+            }
+            .menu_son ul li{
+                display: inline-block;
+            }
+            .menu_son ul li span{
+                display: inline-block;
+                font-size: 12px;
+                width: 29px;
+                text-align: center;
+                line-height: 16px;
+                position: absolute;
+                top: -12px;
+                left: 234px;
+                color: #fff;
+                padding-bottom: 2px;
+                background: #FF7452;
+                border-radius: 9px;
+                /* border: 5px solid #FF7452; */
+            }
+            .menu_son menu_son_country {
+                flex: 1;
+            }
+            .menu_son ul {
+                position: relative;
+                left: 45px;
+                top: 2px;
+                width: 800px;
+                list-style: none;
+            }
+            .menu_son_app{
+                display: inline-block;
+                position: relative;
+                right: -87px;
+                height: 38px;
+                line-height: 38px;
+                color: #00b38a;
+                cursor: pointer;
+            }
+            .menu_son_app:hover{
+                color: #05eaaf;
+            }
+            .menu_son_firm{
+                display: inline-block;
+                position: relative;
+                top: 13px;
+                right: -114px;
+                color: #afb5c0;
+                cursor: pointer;
+            }
+            .menu_son_firm:hover{
+                color: #fff;
+            }
+            .wrapper{
+                padding:30px 0px 11px;
+                background: #f2f5f4;
+                width: 100%;
+                height: 163px;
+                margin: 0 auto;
+                display: flex;
+            }
+            .placeholder{
+                flex: 1;
+            }
+            .wrapper_body{
+                width: 1024px;
+                height: 163px;
+            }
+            .wrapper_left{
+                display: inline-block;
+            }
+            .wrapper_left_jobsname_firm{
+                color: #555;
+                margin-bottom: 4px;
+            }
+            .wrapper_left_jobsname_work{
+                font-size: 36px;
+                margin-bottom: 9px;
+            }
+            .wrapper_left_jobslimit{
+                font-size: 18px;
+            }
+            .wrapper_left_jobslimit span{
+                color: #FF7452;
+            }
+            .wrapper_left_jobslimit p{
+                background: #fff;
+                border-radius: 10px;
+                font-size: 12px;
+                height: 22px;
+                width: 43.51px;
+                padding: 0 10px;
+                margin: 8px 0 0;
+            }
+            .wrapper_left_jobssendtime{
+                padding-top: 10px;
+                color: #999;
+            }
+            .wrapper_right{
+                display: inline-block;
+                position: relative;
+                top: -72px;
+                right: -266px;
+            }
+            .wrapper_right_btn_collect{
+                border: 1px solid #00b38a;
+                color: #00b38a;
+                width: 104px;
+                height: 44px;
+                line-height: 44px;
+                display: inline-block;
+                text-align: center;
+            }
+            .wrapper_right_btn_deliver{
+                display: inline-block;
+                width: 72px;
+                height: 44px;
+                line-height: 44px;
+                padding: 0 30px;
+                background: #00b38a;
+                color: #fff;
+                font-size: 18px;
+                margin-left: 17px;
+                border: 1px solid #00b38a;
+            }
+            .wrapper_right_resume{
+            text-decoration: underline;
+            position: relative;
+            left: 20px;
+            }
+            .wrapper_right_resume a{
+                position: relative;
+                top: 20px;
+                padding-right: 42px;
+            }
+            .wrapper_right_resume span{
+                width: 15px;
+                height: 15px;
+                border: 1px solid #00b38a;
+                background: #fff;
+            }
+            .wrapper_right_resume_mend span{
+                position: absolute;
+                top: 2px;
+                left: -20px;
+            }
+            .wrapper_right_resume_upload span{
+                position: absolute;
+                top: 2px;
+                left: -20px;
+            }
+            .wrapper_right_icon{
+                position: relative;
+                top: 53px;
+                right: -130px;
+            }
+            .wrapper_right_icon a{
+                display: inline-block;
+                width:40px;
+            }
+            .wrapper_right_icon span{
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #00b38a;
+                background: #fff;
+            }
+            .main{
+                display: flex;
+            }
+            .main_body{
+                width: 1024px;
+                padding-bottom: 118px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu_son">
+                <div class="menu_son_country">
+                    <a class="logo"></a>
+                </div>
+                <ul>
+                    <li>首页</li>
+                    <li>公司</li>
+                    <li>校园招聘
+                        <span>new</span>
+                    </li>
+                    <li>言职</li>
+                    <li>课程</li>
+                </ul>
+                <div class="menu_son_passport"> 
+                    <a class="logo_head"></a>
+                    <p>登录</p>
+                    <p>注册</p>
+                </div>
+                <div class="menu_son_app">
+                    拉勾APP
+                    <a class="loge_phone"></a>
+                </div>
+                <div class="menu_son_firm">进入企业版</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="placeholder"></div>
+            <div class="wrapper_body">
+                <div class="wrapper_left">
+                    <div class="wrapper_left_jobsname">
+                        <div class="wrapper_left_jobsname_firm">
+                            腾讯PCG内容平台部招聘
+                        </div>
+                        <div class="wrapper_left_jobsname_work">
+                            企鹅号Node.js前端开发工程...
+                        </div>
+                    </div>
+                    <div class="wrapper_left_jobslimit">
+                        <span>25k-40k </span>
+                        /北京 / 经验不限 / 本科及以上 / 全职
+                        <p>Node.js</p>
+                    </div>
+                    <div class="wrapper_left_jobssendtime">
+                        2019-09-24  发布于拉勾网
+                    </div>
+                </div>
+                <div class="wrapper_right">
+                    <div class="wrapper_right_btn">
+                        <span class="wrapper_right_btn_collect">
+                            收藏
+                        </span>
+                        <span class="wrapper_right_btn_deliver">
+                            投个简历
+                        </span>
+                    </div>
+                    <div class="wrapper_right_resume">
+                        <a class="wrapper_right_resume_mend">
+                            <span></span>
+                            完善在线建立
+                        </a>
+                        <a class="wrapper_right_resume_upload">
+                            <span></span>
+                            上传附件简历
+                        </a>
+                    </div>
+                    <div class="wrapper_right_icon">
+                        <a class="wrapper_right_icon_jubao">
+                            <span></span>
+                        </a>
+                        <a class="wrapper_right_icon_wechat">
+                            <span></span>
+                        </a>
+                        <a class="wrapper_right_icon_miniprogram">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder"></div>
+        </div>
+        <div class="main">
+            <div class="placeholder"></div>
+            <div class="main_body">
+                <div class="main_body_left">
+
+                </div>
+                <div class="main_body_right">
+
+                </div>
+            </div>
+            <div class="placeholder"></div>
+        </div>
+    </body>
+</html>
