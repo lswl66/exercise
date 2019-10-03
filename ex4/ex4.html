@@ -801,6 +801,83 @@
                 line-height: 14px;
                 margin: 0;
             }
+            .loginbar{
+                background: #09c084;
+                height: 60px;
+                width: 100%;
+                margin: 0 auto;
+                position: fixed;
+                bottom: 0;
+                z-index: 1099098;
+            }
+            .loginbar_wrapper{
+                position: relative;
+                width: 1200px;
+                margin: 0 74.5px;
+            }
+            .loginbar_wrapper .loginbar_wrapper_icon{
+                display: inline-block;
+                width: 99px;
+                height: 86px;
+                background-repeat: no-repeat;
+                background-image: url(https://www.lgstatic.com/lg-www-fed/common/widgets/new_login_toolbar/img/login_officer_bg_8c1de01.png);
+                position: absolute;
+                top: -26px;
+            }
+            .loginbar_wrapper p{
+                display: inline-block;
+                position: relative;
+                top: 18px;
+                left: 90px;
+                font-size: 20px;
+                color: #fff;
+                margin:0;
+            }
+            .loginbar_wrapper .loginbar_wrapper_text{
+                margin: 0 70px;
+            }
+            .loginbar_wrapper .loginbar_wrapper_text_firm{
+                margin-right: 0px;
+            }
+            .loginbar_wrapper .loginbar_wrapper_text_jobs{
+                margin-left: 0px;
+            }
+            .loginbar_wrapper_line{
+                margin: 0 20px;
+                opacity: 0.4;
+                font-size: 18px;
+            }
+            .loginbar_wrapper div{
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+            }
+            .loginbar_wrapper div a{
+                display: inline-block;
+                position: relative;
+                top: 11px;
+                right: 0px;
+                width: 89px;
+                height: 38px;
+                line-height: 38px;
+                border: 1px solid #fff;
+                border-radius: 3px;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .loginbar_wrapper .loginbar_wrapper_login{
+                color: #fff;
+                margin-right: 15px;
+            }
+            .loginbar_wrapper .loginbar_wrapper_login:hover{
+                color: #09c084;
+                background: #fff;
+            }
+            .loginbar_wrapper .loginbar_wrapper_register{
+                color: #09c084;
+                background: #fff;
+            }
             .logo{
                 display: block;
                 background-image: url(https:///www.lgstatic.com/lg-www-fed/common/widgets/header_c/modules/img/sprite_361857f.png);
@@ -962,7 +1039,29 @@
     </head>
     <body>
         <a class="rocket"></a>
-        <a class="loginbar"></a>
+        <div class="loginbar">
+            <div class="loginbar_wrapper">
+                <a class="loginbar_wrapper_icon"></a>
+                <p>
+                    <span class="loginbar_wrapper_text">
+                        去互联网好公司工作，就上拉勾 
+                    </span>
+                    <span class="loginbar_wrapper_text loginbar_wrapper_text_firm">
+                        778207公司
+                    </span>
+                    <span class="loginbar_wrapper_line">
+                        | 
+                    </span>
+                    <span class="loginbar_wrapper_text loginbar_wrapper_text_jobs">
+                        6410568职位
+                    </span>
+                </p>
+                <div>
+                    <a class="loginbar_wrapper_login">登录</a>
+                    <a class="loginbar_wrapper_register">注册</a>
+                </div>
+            </div>
+        </div>
         <div class="menu">
             <div class="menu_son">
                 <div class="menu_son_country">
