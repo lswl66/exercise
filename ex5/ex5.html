@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QQ音乐</title>
+        <style>
+            body{
+                margin: 0;
+                width: 100%;
+            }
+            .menu{
+                width: 1200px;
+                height: 142px;
+                margin: 0 auto;
+            }
+            .menu_top{
+                height: 90px;
+                line-height: 90px;
+            }
+            .menu_top a{
+                display: inline-block;
+            }
+            .menu_top_logo{
+                width: 170px;
+                height: 46px;
+                margin-top: 22px;
+            }
+            .menu_top_list{
+                display: inline-block;
+                list-style:none;
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+                position: relative;
+                top: -16px;
+                left: 16px;
+            }
+            .menu_top_list_link{
+                display: inline-block;
+                margin: 0 -5px 0 0;
+                position: relative;
+            }
+            .menu_top_list_link:hover .menu_top_list_link_a{
+                color: #31c27c;
+            }
+            .menu_top_list_link .menu_top_list_link_a{
+                cursor: pointer;
+                color: #000;
+                padding: 0 20px;
+                text-decoration: none;
+            }
+            .menu_top_list_link_current{
+                display: inline-block;
+                margin: 0 -5px 0 0;
+                background: #31c27c;
+            }
+            .menu_top_list_link_current a{
+                color: #fff;
+                cursor: pointer;
+                padding: 0 20px;
+                text-decoration: none;
+            }
+            .menu_top_list_link img{
+                height: 14px;
+                position: absolute;
+                top: 20px;
+                right: 0px;
+            }
+            .menu_top_list_link_software_card{
+                display: none;
+                width: 160px;
+                height: 127px;
+                padding: 9px 0 18px;
+                border-radius: 4px;
+                box-shadow: 0 0 4px rgba(0,0,0,.35); 
+                position: absolute;
+                top: 68px;
+                left: 18px;
+                background: #fff;
+                z-index:109090;
+            }
+            .menu_top_list_link_software_card p{
+                height: 22px;
+                line-height: 1.5;
+                font-size: 12px;
+                padding: 5px 0;
+                color: #000;
+                margin: 0 0 0 16px;
+            }
+            .menu_top_list_link_software_card p a{
+                position: relative;
+                top: 2px;
+            }
+            .menu_top_list_link_software_card .icon_hq{
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/sprite_privilege.png?max_age=2592000&v=9040c7085bbd85261327dcb7c4846e2e&v=9040c7085bbd85261327dcb7c4846e2e);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+            .menu_top_list_link_software_card .icon_dts{
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/sprite_privilege.png?max_age=2592000&v=9040c7085bbd85261327dcb7c4846e2e&v=9040c7085bbd85261327dcb7c4846e2e);
+                background-repeat: no-repeat;
+                background-position: 0 -30px;
+            }
+            .menu_top_list_link_software_card .icon_skin{
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/sprite_privilege.png?max_age=2592000&v=9040c7085bbd85261327dcb7c4846e2e&v=9040c7085bbd85261327dcb7c4846e2e);
+                background-repeat: no-repeat;
+                background-position: 0 -60px;
+            }   
+            .menu_top_list_link_software_card_download{
+                display: inline-block;
+                margin: 6px auto 0;
+                width: 135px;
+                height: 25px;
+                line-height: 25px;
+                font-size: 12px;
+                color: #fff;
+                text-align: center;
+                border-radius: 25px;
+                background-color: #24ccaa;
+                cursor: pointer;
+                position: absolute;
+                left: 12px;
+                bottom: 16px;
+            }
+            .menu_top_list_link_software_card_download:hover{
+                background-color: #31c27c;
+            }
+            .menu_top_list_link_software:hover .menu_top_list_link_software_card{
+                display: inline-block;
+            }
+            .menu_top_search{
+                display: inline-block;
+                border: 1px solid #c9c9c9;
+                padding: 0 33px 0 11px;
+                line-height: 36px;
+                height: 36px;
+                margin-top: 26px;
+                position: relative;
+                top: -18px;
+                right: -55px;
+                border-radius: 3px;
+            }
+            .menu_top_search input{
+                width: 174px;
+                height: 36px;
+                border: 0;
+                font-size: 14px;
+                padding: 0;
+                position: relative;
+                top: -1px; 
+            }
+            .menu_top_search .icon_search{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 50%;
+                right: 11px;
+                margin-top: -8px;
+                cursor: pointer;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-repeat: no-repeat;
+                background-position: 0 -40px;
+            }
+            .menu_top_search .icon_search:hover{
+                background-position: 0 -60px;
+            }
+            .menu_top_btn{
+                display: inline-block;
+                position: relative;
+            }
+            .menu_top_btn_login{
+                display: inline-block;
+                font-size: 16px;
+            }
+            .menu_top_btn_green{
+                display: inline-block;
+            }
+            .menu_bottom{
+                border-top: 1px solid #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu_top">
+                <a href="https://y.qq.com/">
+                    <img src="https://y.gtimg.cn/mediastyle/yqq/img/logo.png?nowebp=1" class="menu_top_logo">
+                </a>
+                <ul class="menu_top_list">
+                    <li class="menu_top_list_link_current">
+                        <a href="https://y.qq.com/" >
+                            音乐馆
+                        </a>
+                    </li>
+                    <li class="menu_top_list_link">
+                        <a href="https://y.qq.com/portal/profile.html" class="menu_top_list_link_a">
+                            我的音乐
+                        </a>
+                    </li>
+                    <li class="menu_top_list_link menu_top_list_link_software">
+                        <a href="https://y.qq.com/download/index.html" class="menu_top_list_link_a">
+                            客户端
+                        </a>
+                        <img src="http://y.gtimg.cn/mediastyle/yqq/extra/mark_1.png">
+                        <div class="menu_top_list_link_software_card">
+                            <p>
+                                <a class="icon_hq"></a>
+                                <span>HQ高品质 全员开启</span>
+                            </p>
+                            <p>
+                                <a class="icon_dts"></a>
+                                <span>独家音效 全面升级</span>
+                            </p>
+                            <p>
+                                <a class="icon_skin"></a>
+                                <span>轻盈视觉 动态皮肤</span>
+                            </p>
+                            <a class="menu_top_list_link_software_card_download">下载体验</a>
+                        </div>
+                    </li>
+                    <li class="menu_top_list_link">
+                        <a href="https://y.qq.com/vip/daren_recruit/apply.html" 
+                        class="menu_top_list_link_a">
+                            音乐号
+                        </a>
+                    </li>
+                    <li class="menu_top_list_link">
+                        <a href="https://y.qq.com/portal/vipportal/index.html" 
+                        class="menu_top_list_link_a">
+                            VIP
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu_top_search">
+                    <input type="text" placeholder="搜索音乐、MV、歌单、用户">
+                    <span class="icon_search"></span>
+                </div>
+                <div class="menu_top_btn">
+                    <a class="menu_top_btn_login">登录</a>
+                    <a class="menu_top_btn_green">开通绿钻豪华版</a>
+                    <a class="menu_top_btn_pay">开通付费包</a>
+                </div>
+            </div>
+            <div class="menu_bottom"></div>
+        </div>
+    </body>
+</html>

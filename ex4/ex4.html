@@ -4,6 +4,7 @@
         <title>
             拉勾ex4
         </title>
+        <link rel="stylesheet" href="./widgets_997285c.css">
         <style>
               body{
                 margin: 0 ;
@@ -21,6 +22,12 @@
                 position: relative;
                 right: -45px;
                 cursor: pointer;
+                height: 38px;
+                line-height: 38px;
+            }
+            .menu_son_passport p{
+                position: relative;
+                top: -10px;
             }
             .menu_son span{
                 display: inline-block;
@@ -62,7 +69,7 @@
                 line-height: 16px;
                 position: absolute;
                 top: -12px;
-                left: 234px;
+                left: 193px;
                 color: #fff;
                 padding-bottom: 2px;
                 background: #FF7452;
@@ -75,7 +82,7 @@
             .menu_son ul {
                 position: relative;
                 left: 45px;
-                top: 2px;
+                top: 15px;
                 width: 800px;
                 list-style: none;
             }
@@ -139,7 +146,7 @@
                 border-radius: 10px;
                 font-size: 12px;
                 height: 22px;
-                width: 43.51px;
+                width: 44.51px;
                 padding: 0 10px;
                 margin: 8px 0 0;
             }
@@ -150,8 +157,8 @@
             .wrapper_right{
                 display: inline-block;
                 position: relative;
-                top: -72px;
-                right: -266px;
+                top: -66px;
+                right: -275px;
             }
             .wrapper_right_btn_collect{
                 border: 1px solid #00b38a;
@@ -161,6 +168,11 @@
                 line-height: 44px;
                 display: inline-block;
                 text-align: center;
+            }
+            .wrapper_right_btn_collect i{
+                font-size: 18px;
+                position: relative;
+                top: 2px;
             }
             .wrapper_right_btn_deliver{
                 display: inline-block;
@@ -175,30 +187,32 @@
                 border: 1px solid #00b38a;
             }
             .wrapper_right_resume{
-            text-decoration: underline;
-            position: relative;
-            left: 20px;
+                text-decoration: underline;
+                position: relative;
+                left: 28px;
             }
             .wrapper_right_resume a{
                 position: relative;
                 top: 20px;
                 padding-right: 42px;
             }
-            .wrapper_right_resume span{
+            .wrapper_right_resume i{
                 width: 15px;
                 height: 15px;
-                border: 1px solid #00b38a;
-                background: #fff;
+                /* border: 1px solid #00b38a;
+                background: #fff; */
             }
-            .wrapper_right_resume_mend span{
+            .wrapper_right_resume_mend i{
                 position: absolute;
-                top: 2px;
-                left: -20px;
+                top: -5px;
+                left: -30px;
+                font-size: 28px;
             }
-            .wrapper_right_resume_upload span{
+            .wrapper_right_resume_upload i{
                 position: absolute;
-                top: 2px;
-                left: -20px;
+                top: -5px;
+                left: -24px;
+                font-size: 28px;
             }
             .wrapper_right_icon{
                 position: relative;
@@ -207,14 +221,23 @@
             }
             .wrapper_right_icon a{
                 display: inline-block;
+                text-align: center;
                 width:40px;
+                cursor: pointer;
             }
-            .wrapper_right_icon span{
+            .wrapper_right_icon_wechat{
+                border-left:1px solid #e1e1e1;
+                border-right:1px solid #e1e1e1;
+            }
+            .wrapper_right_icon i{
                 display: inline-block;
-                width: 15px;
-                height: 15px;
-                border: 1px solid #00b38a;
-                background: #fff;
+                font-size: 20px;
+                line-height: 20px;
+                color: #c6ced0;
+                cursor: pointer;
+            }
+            .wrapper_right_icon .icon-glyph-attention{
+                font-size: 17px;
             }
             .main{
                 display: flex;
@@ -519,6 +542,8 @@
             .main_body_right_firm_name span{
                 font-size: 18px;
                 cursor: pointer;
+                position: relative;
+                top: 80px;
             }
             .main_body_right_firm_name a{
                 display: inline-block;
@@ -528,18 +553,14 @@
                 background-repeat: no-repeat;
                 cursor: pointer;
                 position: relative;
-                top: 2px;
+                top: 80px;
             }
             .main_body_right_firm p{
                 color: #737373;
+                margin-top: 25px;
             }
-            .main_body_right_firm p span{
-                display: inline-block;
-                width: 15px;
-                height: 15px;
-                border: 1px solid #00b38a;
-                background: #fff;
-                margin-right: 10px;
+            .main_body_right_firm p i{
+                margin-right: 16px;
             }
             .main_body_right_firm_hrweb a:hover{
                 color: #00b38a;
@@ -547,7 +568,7 @@
             } 
             .main_body_right_jobs{
                 position: relative;
-                top: -15px;
+                top: 22px;
             }
             .main_body_right_jobs_title{
                 display: inline-block;
@@ -557,7 +578,7 @@
                 background: #fff; 
                 padding-right: 12px;  
                 position: relative;
-                top: 43px;
+                top: 12px;
             }
             .main_body_right_jobs_list{
                 list-style: none;
@@ -603,7 +624,7 @@
                 background: #fafafa;
                 text-align: center;
                 position: relative;
-                top: -19px;  
+                top: 32px;  
                 cursor: pointer; 
             }
             .main_body_right_seemore:hover{
@@ -1112,6 +1133,7 @@
                 <div class="wrapper_right">
                     <div class="wrapper_right_btn">
                         <span class="wrapper_right_btn_collect">
+                            <i class="icon-glyph-hollow-star"></i>
                             收藏
                         </span>
                         <span class="wrapper_right_btn_deliver">
@@ -1120,23 +1142,23 @@
                     </div>
                     <div class="wrapper_right_resume">
                         <a class="wrapper_right_resume_mend">
-                            <span></span>
+                            <i class="icon-glyph-online-resume"></i>
                             完善在线建立
                         </a>
                         <a class="wrapper_right_resume_upload">
-                            <span></span>
+                            <i class="icon-glyph-attachment"></i>
                             上传附件简历
                         </a>
                     </div>
                     <div class="wrapper_right_icon">
                         <a class="wrapper_right_icon_jubao">
-                            <span></span>
+                            <i class="icon-glyph-attention"></i>
                         </a>
                         <a class="wrapper_right_icon_wechat">
-                            <span></span>
+                            <i class="icon-glyph-wechat"></i>
                         </a>
                         <a class="wrapper_right_icon_miniprogram">
-                            <span></span>
+                            <i class="icon-glyph-mina"></i>
                         </a>
                     </div>
                 </div>
@@ -1355,19 +1377,19 @@
                             <a></a>
                         </div>
                         <p class="main_body_right_firm_industry">
-                            <span></span>
+                            <i class="icon-glyph-fourSquare"></i>
                             社交
                         </p>
                         <p class="main_body_right_firm_stage">
-                            <span></span>
+                            <i class="icon-glyph-trend"></i>
                             上市公司
                         </p>
                         <p class="main_body_right_firm_figure">
-                            <span></span>
+                            <i class="icon-glyph-figure"></i>
                             两千人以上
                         </p>
                         <p class="main_body_right_firm_hrweb">
-                            <span></span>
+                            <i class="icon-glyph-home"></i>
                             <a>http://hr.tencent.com</a>
                         </p>
                     </div>
