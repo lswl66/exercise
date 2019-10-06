@@ -149,6 +149,7 @@
                 border-radius: 3px;
             }
             .menu_top_search input{
+                outline: 0;
                 width: 174px;
                 height: 36px;
                 border: 0;
@@ -176,16 +177,1451 @@
             .menu_top_btn{
                 display: inline-block;
                 position: relative;
+                font-size: 13px;
+                position: relative;
+                top: -18px;
+                right: -60px;
+            }
+            .menu_top_btn a{
+                display: inline-block;
+                cursor: pointer;
+                margin: 0 10px;
             }
             .menu_top_btn_login{
-                display: inline-block;
                 font-size: 16px;
             }
+            .menu_top_btn_login:hover{
+                color: #31c27c;
+            }
             .menu_top_btn_green{
-                display: inline-block;
+                width: 91px;
+                height: 36px;
+                line-height: 36px;
+                background: #31c27e;
+                color: #fff;
+                padding: 0 9px;
+                border-radius: 2px;
+            }
+            .menu_top_btn_green:hover{
+                background: #2caf6f;
+            }
+            .menu_top_btn .menu_top_btn_pay{
+                height: 36px;
+                line-height: 36px;
+                padding: 0 9px;
+                border: 1px solid #c9c9c9;
+                margin: 0;
+            }
+            .menu_top_btn_pay:hover{
+                background: #ededed;
             }
             .menu_bottom{
                 border-top: 1px solid #f2f2f2;
+            }
+            .menu_bottom ul{
+                list-style: none;
+                margin:12px 178px 0;
+            }
+            .menu_bottom ul li{
+                display: inline-block;
+                margin-right: 47px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .menu_bottom ul li:hover{
+                color: #31c27c;
+            }
+            .menu_bottom ul .menu_bottom_current{
+                color: #31c27c;
+            }
+            .main{
+                background-color: #fafafa;
+                padding-bottom: 36px;
+            }
+            .main_musiclist{
+                position: relative;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_detail.jpg);
+                background-repeat: repeat-x;
+                background-position: 50% 0;
+            }
+            .main_musiclist_inner{
+                width: 1200px;
+                margin: 0 auto 46px;
+                position: relative;
+                top: 50px;
+            }
+            .main_musiclist_title{
+                margin: 0 auto;
+                width: 196px;
+                height: 40px;
+                background-image:url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=c7310a1eb12fc9fce032314be79ad579);
+            }
+            .main_musiclist_index{
+                list-style:none;
+                padding: 5px 0 15px;
+                text-align: center;
+            }
+            .main_musiclist_index li{
+                display: inline-block;
+                margin-right: 40px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .main_musiclist_index li:hover{
+                color: #31c27c;
+            }
+            .main_musiclist_index_current{
+                color: #31c27c;
+            }
+            .main_musiclist_playlist{
+                list-style:none;
+                padding-left: 0;
+                display: flex;
+            }
+            .main_musiclist_playlist li{
+                display: inline-block;
+                flex: 1;
+                margin-right: 20px;
+            }
+            .main_musiclist_playlist div{
+                overflow: hidden;
+                height: 224px;
+                width: 224px;
+                position: relative;
+                margin:0 0 15px;
+                cursor: pointer;
+            }
+            .main_musiclist_playlist img{
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: transform 0.75s;
+            }
+            .main_musiclist_playlist div:hover img{
+                transform: scale(1.07);
+                transition: transform 0.75s;
+            }
+            .main_musiclist_playlist_shadow{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #000;
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            .main_musiclist_playlist div:hover .main_musiclist_playlist_shadow{
+                background: #000;
+                opacity: 0.2;
+                transition: opacity 0.5s;
+            }
+            .main_musiclist_playlist_player{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -35px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/cover_play.png?max_age=2592000&v=88abebcbc1242dbbbbc836cc3e04a006);
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            .main_musiclist_playlist div:hover .main_musiclist_playlist_player{
+                opacity: 0.9;
+                transform: scale(1);
+                transition-duration: 0.5s;
+                transition-property: opacity transform;
+            }
+            .main_musiclist_playlist p{
+                margin: 3px 0;
+                font-size: 14px;
+            }
+            .main_musiclist_playlist_name{
+                cursor: pointer;
+            }
+            .main_musiclist_playlist_name:hover{
+                color: #31c27c;
+            }
+            .main_musiclist_playlist_count{
+                color: #999;
+            }
+            .main_musiclist_slide{
+                position: absolute;
+                top: 186px;
+                width: 100%;
+            }
+            .main_musiclist_slide_left{
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .main_musiclist_slide_left_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+            }
+            .main_musiclist_slide_left_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_musiclist_slide_left_btn{
+                opacity: 0;
+                transform: translateX(-100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_musiclist:hover .main_musiclist_slide_left_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_musiclist_slide_left_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: -20px -120px;
+            }
+            .main_musiclist_slide_right{
+                overflow: hidden;
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .main_musiclist_slide_right_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+                /* position: absolute;
+                right: 0; */
+            }
+            .main_musiclist_slide_right_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_musiclist_slide_right_btn{
+                opacity: 0;
+                transform: translateX(100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_musiclist:hover .main_musiclist_slide_right_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform,width;
+                transition-duration: .5s;
+            }
+            .main_musiclist_slide_right_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: 0px -120px;
+            }
+            .main_musiclist_shift{
+                text-align: center;
+                position: relative;
+                top: 54px;
+            }
+            .main_musiclist_shift a{
+                display: inline-block;
+                width: 28px;
+                height: 18px;
+                line-height: 18px;
+                cursor: pointer;
+            }
+            .main_musiclist_shift a i{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 4px;
+                background: rgba(0,0,0,.1);
+            }
+            .main_musiclist_shift a:hover i{
+                background: rgba(0,0,0,.3);
+            }
+            .main_musiclist_shift .main_musiclist_shift_current{
+                background: rgba(0,0,0,.3);
+            }
+            .main_newmusic{
+                margin-top: 75px;
+                position: relative;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_detail.jpg);
+                background-repeat: repeat-x;
+                background-position: 50% 0;
+            }
+            .main_newmusic_inner{
+                width: 1200px;
+                margin: 0 auto 46px;
+                position: relative;
+                top: 48px;
+            }
+            .main_newmusic_title{
+                margin: 0 auto;
+                width: 196px;
+                height: 40px;
+                background-image:url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=c7310a1eb12fc9fce032314be79ad579);
+                background-position: 0 -50px;
+            }
+            .main_newmusic_index{
+                list-style:none;
+                padding: 5px 0 15px;
+                text-align: center;
+            }
+            .main_newmusic_index li{
+                display: inline-block;
+                margin-right: 40px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .main_newmusic_index li:hover{
+                color: #31c27c;
+            }
+            .main_newmusic_index_current{
+                color: #31c27c;
+            }
+            .main_newmusic_musiclist{
+                list-style:none;
+                padding-left: 0;
+                margin-top: 28px;
+            }
+            .main_newmusic_musiclist li{
+                display: inline-block;
+                margin-right: 20px;
+                padding: 10px 0;
+            }
+            .main_newmusic_musiclist_haveborder{
+                border-bottom: 1px solid #f2f2f2;
+            }
+            .main_newmusic_musiclist_left{
+                display: inline-block;
+                overflow: hidden;
+                height: 86px;
+                width: 86px;
+                position: relative;
+                margin:0 8px 0 0;
+                cursor: pointer;
+            }
+            .main_newmusic_musiclist img{
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: transform 0.75s;
+            }
+            .main_newmusic_musiclist div:hover img{
+                transform: scale(1.07);
+                transition: transform 0.75s;
+            }
+            .main_newmusic_musiclist_shadow{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #000;
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            .main_newmusic_musiclist div:hover .main_newmusic_musiclist_shadow{
+                background: #000;
+                opacity: 0.2;
+                transition: opacity 0.5s;
+            }
+            .main_newmusic_musiclist_player{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -35px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/cover_play.png?max_age=2592000&v=88abebcbc1242dbbbbc836cc3e04a006);
+                background-size: 68%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            .main_newmusic_musiclist div:hover .main_newmusic_musiclist_player{
+                opacity: 0.9;
+                transform: scale(1);
+                transition-duration: 0.5s;
+                transition-property: opacity transform;
+            }
+            .main_newmusic_musiclist_right{
+                display: inline-block;
+            }
+            .main_newmusic_musiclist p{
+                margin: 3px 0;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .main_newmusic_musiclist p:hover{
+                color: #31c27c;
+            }
+            .main_newmusic_musiclist_musicauthor{
+                color: #999;
+            }
+            .main_newmusic_musiclist_musictime{
+                font-size: 14px;
+                color: #999;
+                margin: 0 0 0 240px;
+                position: relative;
+                bottom: 35px;
+            }
+            .main_newmusic_slide{
+                position: absolute;
+                top: 220px;
+                width: 100%;
+            }
+            .main_newmusic_slide_left{
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .main_newmusic_slide_left_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+            }
+            .main_newmusic_slide_left_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_newmusic_slide_left_btn{
+                opacity: 0;
+                transform: translateX(-100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_newmusic:hover .main_newmusic_slide_left_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_newmusic_slide_left_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: -20px -120px;
+            }
+            .main_newmusic_slide_right{
+                overflow: hidden;
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .main_newmusic_slide_right_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+                /* position: absolute;
+                right: 0; */
+            }
+            .main_newmusic_slide_right_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_newmusic_slide_right_btn{
+                opacity: 0;
+                transform: translateX(100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_newmusic:hover .main_newmusic_slide_right_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform,width;
+                transition-duration: .5s;
+            }
+            .main_newmusic_slide_right_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: 0px -120px;
+            }
+            .main_newmusic_shift{
+                text-align: center;
+                position: relative;
+                top: 10px;
+            }
+            .main_newmusic_shift a{
+                display: inline-block;
+                width: 28px;
+                height: 18px;
+                line-height: 18px;
+                cursor: pointer;
+            }
+            .main_newmusic_shift a i{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 4px;
+                background: rgba(0,0,0,.1);
+            }
+            .main_newmusic_shift a:hover i{
+                background: rgba(0,0,0,.3);
+            }
+            .main_newmusic_shift .main_newmusic_shift_current{
+                background: rgba(0,0,0,.3);
+            }
+            .main_newmusic_allplay{
+                display: inline-block;
+                font-size: 14px;
+                width: 75px;
+                height: 36px;
+                line-height: 36px;
+                padding: 0 23px;
+                border: 1px solid #c9c9c9;
+                border-radius: 2px;
+                color: #333;
+                position: absolute;
+                left: 75px;
+                top: 100px;
+            }
+            .main_newmusic_allplay:hover{
+                background-color: #ededed;
+            }
+            .main_newmusic_allplay i{
+                display: inline-block;
+                width: 13px;
+                height: 16px;
+                vertical-align: -3px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-repeat: no-repeat;
+                background-position: -60px -220px;
+            }
+            .main_popular{
+                margin-top: 36px;
+                position: relative;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_detail.jpg);
+                background-repeat: repeat-x;
+                background-position: 50% 0;
+            }
+            .main_popular_inner{
+                width: 1200px;
+                margin: 0 auto 46px;
+                position: relative;
+                top: 40px;
+            }
+            .main_popular_title{
+                margin: 0 auto;
+                width: 196px;
+                height: 40px;
+                background-image:url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=c7310a1eb12fc9fce032314be79ad579);
+                background-position: 0 -100px;
+            }
+            .main_popular_list{
+                list-style:none;
+                padding-left: 0;
+                margin-top: 28px;
+            }
+            .main_popular_list li{
+                display: inline-block;
+                padding: 10px 0;
+            }
+            .main_popular_list li:first-child{
+                margin-right: 15px;
+            }
+            .main_popular_list img{
+                display: inline-block;
+                height: 236px;
+                width: 590px;
+                position: relative;
+                cursor: pointer;
+            }
+            .main_popular_slide{
+                position: absolute;
+                top: 220px;
+                width: 100%;
+            }
+            .main_popular_slide_left{
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .main_popular_slide_left_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+            }
+            .main_popular_slide_left_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_popular_slide_left_btn{
+                opacity: 0;
+                transform: translateX(-100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_popular:hover .main_popular_slide_left_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_popular_slide_left_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: -20px -120px;
+            }
+            .main_popular_slide_right{
+                overflow: hidden;
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .main_popular_slide_right_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+                /* position: absolute;
+                right: 0; */
+            }
+            .main_popular_slide_right_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_popular_slide_right_btn{
+                opacity: 0;
+                transform: translateX(100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_popular:hover .main_popular_slide_right_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform,width;
+                transition-duration: .5s;
+            }
+            .main_popular_slide_right_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: 0px -120px;
+            }
+            .main_popular_shift{
+                text-align: center;
+                position: relative;
+                top: -6px;
+            }
+            .main_popular_shift a{
+                display: inline-block;
+                width: 28px;
+                height: 18px;
+                line-height: 18px;
+                cursor: pointer;
+            }
+            .main_popular_shift a i{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 4px;
+                background: rgba(0,0,0,.1);
+            }
+            .main_popular_shift a:hover i{
+                background: rgba(0,0,0,.3);
+            }
+            .main_popular_shift .main_popular_shift_current{
+                background: rgba(0,0,0,.3);
+            }
+            .main_newcd{
+                margin-top: 16px;
+                position: relative;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_detail.jpg);
+                background-repeat: repeat-x;
+                background-position: 50% 0;
+            }
+            .main_newcd_inner{
+                width: 1200px;
+                margin: 0 auto 46px;
+                position: relative;
+                top: 50px;
+            }
+            .main_newcd_title{
+                margin: 0 auto;
+                width: 196px;
+                height: 40px;
+                background-image:url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=c7310a1eb12fc9fce032314be79ad579);
+                background-position: 0 -150px;
+            }
+            .main_newcd_index{
+                list-style:none;
+                padding: 5px 0 15px;
+                text-align: center;
+            }
+            .main_newcd_index li{
+                display: inline-block;
+                margin-right: 40px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .main_newcd_index li:hover{
+                color: #31c27c;
+            }
+            .main_newcd_index_current{
+                color: #31c27c;
+            }
+            .main_newcd_playlist{
+                list-style:none;
+                padding-left: 0;
+            }
+            .main_newcd_playlist li{
+                display: inline-block;
+                margin-right: 12px;
+                margin-bottom: 25px;
+            }
+            .main_newcd_playlist div{
+                overflow: hidden;
+                height: 224px;
+                width: 224px;
+                position: relative;
+                margin:0 0 15px;
+                cursor: pointer;
+            }
+            .main_newcd_playlist img{
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: transform 0.75s;
+            }
+            .main_newcd_playlist div:hover img{
+                transform: scale(1.07);
+                transition: transform 0.75s;
+            }
+            .main_newcd_playlist_shadow{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #000;
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            .main_newcd_playlist div:hover .main_newcd_playlist_shadow{
+                background: #000;
+                opacity: 0.2;
+                transition: opacity 0.5s;
+            }
+            .main_newcd_playlist_player{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -35px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/cover_play.png?max_age=2592000&v=88abebcbc1242dbbbbc836cc3e04a006);
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            .main_newcd_playlist div:hover .main_newcd_playlist_player{
+                opacity: 0.9;
+                transform: scale(1);
+                transition-duration: 0.5s;
+                transition-property: opacity transform;
+            }
+            .main_newcd_playlist p{
+                margin: 3px 0;
+                font-size: 14px;
+                cursor: pointer;
+                width: 224px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .main_newcd_playlist p:hover{
+                color: #31c27c;
+            }
+            .main_newcd_playlist_author{
+                color: #999;
+            }
+            .main_newcd_inner_more{
+                font-size: 14px;
+                position: absolute;
+                right: 12px;
+                top: 62px;
+                cursor: pointer;
+            }
+            .main_newcd_inner_more:hover{
+                color: #31c27c;
+            }
+            .main_newcd_inner_more i{
+                display: inline-block;
+                width: 7px;
+                height: 12px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-repeat: no-repeat;
+                background-position: -120px -40px;
+            }
+            .main_newcd_inner_more:hover i{
+                background-position: -120px -60px;
+            }
+            .main_rank{
+                margin-top: 16px;
+                position: relative;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_detail.jpg);
+                background-repeat: repeat-x;
+                background-position: 50% 0;
+            }
+            .main_rank_title{
+                margin: 0 auto;
+                width: 196px;
+                height: 40px;
+                background-image:url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=c7310a1eb12fc9fce032314be79ad579);
+                background-position: 0 -200px;
+            }
+            .main_rank_inner{
+                width: 1200px;
+                margin: 0 auto 46px;
+                position: relative;
+                top: 50px;
+            }
+            .main_rank_playlist{
+                list-style:none;
+                padding-left: 0;
+            }
+            .main_rank_playlist li{
+                display: inline-block;
+                margin-right: 12px;
+                margin-bottom: 25px;
+            }
+            .main_rank_playlist_box{
+                height: 500px;
+                width: 224px;
+                position: relative;
+                overflow: hidden;
+            }
+            .main_rank_playlist_box_back{
+                width: 224px;
+                height: 500px;
+                position: absolute;
+                top: 0;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_index_top.jpg?max_age=2592000&v=3beef369200a0863560787fd560c8205);
+                background-repeat: no-repeat;
+                transform: scale(1);
+                transition: transform .75s;
+            }
+            .main_rank_playlist_box_back1{
+                background-position: 0;
+            }
+            .main_rank_playlist_box_back2{
+                background-position: -224px 0;
+            }
+            .main_rank_playlist_box_back3{
+                background-position: -448px 0;
+            }
+            .main_rank_playlist_box_back4{
+                background-position: -672px 0;
+            }
+            .main_rank_playlist_box_back5{
+                background-position: -896px 0;
+            }
+            .main_rank_playlist_box_back:hover{
+                transform: scale(1.06);
+                transition: transform .75s cubic-bezier(0,1,.75,1); 
+            }
+            .main_rank_playlist h3{
+                width: 224px;
+                margin: 0 auto;
+                position: absolute;
+                top: 48px;
+                text-align: center;
+            }
+            .main_rank_playlist h3 i{
+                display: inline-block;
+                width: 66px;
+                height: 22px;
+                z-index: 100;
+                background-image:url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=c7310a1eb12fc9fce032314be79ad579);
+                background-position: 0 -300px;
+                background-repeat: no-repeat;
+            }
+            .main_rank_playlist h3 p{
+                color: #fff;
+                font-size: 26px;
+                font-weight: 400;
+                z-index: 100;
+                margin: 0;
+                cursor: pointer;
+            }
+            .main_rank_playlist_line{
+                display: inline-block;
+                width: 36px;
+                height: 2px;
+                background: #fff;
+                position: absolute;
+                top: 145px;
+                left: 94px;
+                opacity: 1;
+                transition: opacity 0.1s;
+            }
+            .main_rank_playlist div:hover .main_rank_playlist_line{
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            .main_rank_playlist_player{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                cursor: pointer;
+                position: absolute;
+                top: 155px;
+                left: 120px;
+                margin: -35px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/cover_play.png?max_age=2592000&v=88abebcbc1242dbbbbc836cc3e04a006);
+                background-size: 72%;
+                background-repeat: no-repeat;
+                opacity: 0;
+                transform: scale(0.5);
+                transition-duration: 0.5s;
+            }
+            .main_rank_playlist div:hover .main_rank_playlist_player{
+                opacity: 0.9;
+                transform: scale(1);
+                transition-duration: 0.5s;
+                transition-property: opacity transform;
+            }
+            .main_rank_playlist_box_musiclist{
+                margin: 0;
+                color: #fff;
+                font-size: 14px;
+                position: absolute;
+                top: 188px;
+            }
+            .main_rank_playlist_box_musiclist li{
+                position: relative;
+                margin-left: 10px;
+                margin-bottom: 27px;
+            }
+            .main_rank_playlist_box_musiclist p{
+                margin: 6px 0;
+                cursor: pointer;
+            }
+            .main_rank_playlist_box_musiclist_number{
+                position: absolute;
+                top: 0;
+                left: -15px;
+                cursor: text !important;
+            }
+            .main_rank_inner_more{
+                font-size: 14px;
+                position: absolute;
+                right: 12px;
+                top: 5px;
+                cursor: pointer;
+            }
+            .main_rank_inner_more:hover{
+                color: #31c27c;
+            }
+            .main_rank_inner_more i{
+                display: inline-block;
+                width: 7px;
+                height: 12px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-repeat: no-repeat;
+                background-position: -120px -40px;
+            }
+            .main_rank_inner_more:hover i{
+                background-position: -120px -60px;
+            }
+            .main_mvlist{
+                position: relative;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_detail.jpg);
+                background-repeat: repeat-x;
+                background-position: 50% 0;
+            }
+            .main_mvlist_inner{
+                width: 1200px;
+                margin: 0 auto 46px;
+                position: relative;
+                top: 50px;
+            }
+            .main_mvlist_title{
+                margin: 0 auto;
+                width: 196px;
+                height: 40px;
+                background-image:url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=c7310a1eb12fc9fce032314be79ad579);
+                background-position: 0 -250px;
+            }
+            .main_mvlist_index{
+                list-style:none;
+                padding: 5px 0 15px;
+                text-align: center;
+            }
+            .main_mvlist_index li{
+                display: inline-block;
+                margin-right: 40px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .main_mvlist_index li:hover{
+                color: #31c27c;
+            }
+            .main_mvlist_index_current{
+                color: #31c27c;
+            }
+            .main_mvlist_mvbox{
+                display: flex;
+                list-style:none;
+                padding-left: 0;
+            }
+            .main_mvlist_mvbox li{
+                display: inline-block;
+                flex: 1;
+                margin-right: 20px;
+            }
+            .main_mvlist_mvbox div{
+                overflow: hidden;
+                height: 126.66px;
+                width: 224px;
+                position: relative;
+                margin:0 0 15px;
+                cursor: pointer;
+            }
+            .main_mvlist_mvbox img{
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: transform 0.75s;
+            }
+            .main_mvlist_mvbox div:hover img{
+                transform: scale(1.07);
+                transition: transform 0.75s;
+            }
+            .main_mvlist_mvbox_shadow{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #000;
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            .main_mvlist_mvbox div:hover .main_mvlist_mvbox_shadow{
+                background: #000;
+                opacity: 0.2;
+                transition: opacity 0.5s;
+            }
+            .main_mvlist_mvbox_player{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -35px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/cover_play.png?max_age=2592000&v=88abebcbc1242dbbbbc836cc3e04a006);
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            .main_mvlist_mvbox div:hover .main_mvlist_mvbox_player{
+                opacity: 0.9;
+                transform: scale(1);
+                transition-duration: 0.5s;
+                transition-property: opacity transform;
+            }
+            .main_mvlist_mvbox p{
+                margin: 3px 0;
+                font-size: 14px;
+            }
+            .main_mvlist_mvbox_name{
+                cursor: pointer;
+            }
+            .main_mvlist_mvbox_name:hover{
+                color: #31c27c;
+            }
+            .main_mvlist_mvbox_author{
+                color: #999;
+            }
+            .main_mvlist_mvbox_author:hover{
+                color: #31c27c;
+            }
+            .main_mvlist_mvbox_count{
+                color: #999;
+            }
+            .main_mvlist_mvbox_count_icon{
+                display: inline-block;
+                width: 19px;
+                height: 12px;
+                margin-right: 5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: -180px -20px;
+            }
+            .main_mvlist_slide{
+                position: absolute;
+                top: 276px;
+                width: 100%;
+            }
+            .main_mvlist_slide_left{
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .main_mvlist_slide_left_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+            }
+            .main_mvlist_slide_left_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_mvlist_slide_left_btn{
+                opacity: 0;
+                transform: translateX(-100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_mvlist:hover .main_mvlist_slide_left_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_mvlist_slide_left_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: -20px -120px;
+            }
+            .main_mvlist_slide_right{
+                overflow: hidden;
+                display: inline-block;
+                /* width: 50%; */
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .main_mvlist_slide_right_btn{
+                display: inline-block;
+                width: 75px;
+                height: 102px;
+                background: rgba(0,0,0,.05);
+                text-align: center;
+                cursor: pointer;
+                /* position: absolute;
+                right: 0; */
+            }
+            .main_mvlist_slide_right_btn:hover{
+                background: rgba(0,0,0,.1);
+            }
+            .main_mvlist_slide_right_btn{
+                opacity: 0;
+                transform: translateX(100%);
+                transition-property: opacity,transform;
+                transition-duration: .5s;
+            }
+            .main_mvlist:hover .main_mvlist_slide_right_btn{
+                opacity: 1;
+                transform: translateX(0);
+                transition-property: opacity,transform,width;
+                transition-duration: .5s;
+            }
+            .main_mvlist_slide_right_btn i{
+                display: inline-block;
+                width: 20px;
+                height: 39px;
+                margin-top: 31.5px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+                background-position: 0px -120px;
+            }
+            .main_mvlist_shift{
+                text-align: center;
+                position: relative;
+                top: 16px;
+            }
+            .main_mvlist_shift a{
+                display: inline-block;
+                width: 28px;
+                height: 18px;
+                line-height: 18px;
+                cursor: pointer;
+            }
+            .main_mvlist_shift a i{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 4px;
+                background: rgba(0,0,0,.1);
+            }
+            .main_mvlist_shift a:hover i{
+                background: rgba(0,0,0,.3);
+            }
+            .main_mvlist_shift .main_mvlist_shift_current{
+                background: rgba(0,0,0,.3);
+            }
+            .foot{
+                background-color: #333;
+                color: #999;
+                font-size: 14px;
+                position: relative;
+                width: 1349px;
+                height: 590px;
+            }
+            .foot_box{
+                display: inline-block;
+            }
+            .foot_title{
+                font-size: 15px;
+                padding:0 0 46px 12px;
+            }
+            .foot_list{
+                list-style: none;
+                padding: 0;
+                margin-bottom: 0;
+                width: 399px;
+                position: relative;
+                left: -15px;
+            }
+            .foot_list li{
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+            }
+            .foot_list li:hover{
+                color: #31c27c;
+            }
+            .foot_icon{
+                display: block;
+                height: 48px;
+                margin: 0 29px 12px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/footer.png?max_age=2592000&v=2c8fc360fec8704d735687beb9098d2d&v=2c8fc360fec8704d735687beb9098d2d);
+            }
+            .foot_download{
+                width: 357px;
+                position: absolute;
+                top: 80px;
+                left: 74.5px;
+            }
+            .foot_download_icon_pc{
+                width: 37px;
+                background-position: -2px 0;
+            }
+            .foot_list li:hover .foot_download_icon_pc{
+                background-position: -2px -49px;
+            }
+            .foot_download_icon_mac{
+                width: 46px;
+                background-position: -92px 0;
+            }
+            .foot_list li:hover .foot_download_icon_mac{
+                background-position: -92px -49px;
+            }
+            .foot_download_icon_android{
+                width: 37px;
+                background-position: -190px 0;
+            }
+            .foot_list li:hover .foot_download_icon_android{
+                background-position: -190px -49px;
+            }
+            .foot_download_icon_iphone{
+                width: 34px;
+                background-position: -279px 0;
+            }
+            .foot_list li:hover .foot_download_icon_iphone{
+                background-position: -279px -49px;
+            }
+            .foot_product{
+                width: 304px;
+                position: absolute;
+                top: 80px;
+                left: 538px;
+            }
+            .foot_product span{
+                position: relative;
+                left: 9px;
+                top: 20px;
+                margin-right: 28px;
+                cursor: pointer;
+            }
+            .foot_product span:hover{
+                color: #31c27c;
+            }
+            .foot_product_icon_qmkg{
+                width: 41px;
+                background-position: -370px 0;
+            }
+            .foot_list li:hover .foot_product_icon_qmkg{
+                background-position: -370px -49px;
+            }
+            .foot_product_icon_ss{
+                width: 37px;
+                background-position: -463px 0;
+            }
+            .foot_list li:hover .foot_product_icon_ss{
+                background-position: -463px -49px;
+            }
+            .foot_product_icon_qplay{
+                width: 40px;
+                background-position: -563px 0;
+            }
+            .foot_list li:hover .foot_product_icon_qplay{
+                background-position: -563px -49px;
+            }
+            .foot_link{
+                width: 300px;
+                position: absolute;
+                top: 80px;
+                right: 74.5px;
+            }
+            .foot_link .foot_title{
+                position: relative;
+                left: -14px;
+            }
+            .foot_link_inner span{
+                display: inline-block;
+                width: 86px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .foot_link_inner span:hover{
+                color: #31c27c;
+            }
+            .foot_platform{
+                position: absolute;
+                top: 320px;
+                left: 88px;
+            }
+            .foot_platform .foot_title{
+                padding-bottom: 32px;
+                position: relative;
+                left: -10px;
+            }
+            .foot_platform span{
+                margin-right: 30px;
+                cursor: pointer;
+            }
+            .foot_platform span:hover{
+                color: #31c27c;
+            }
+            .foot_officialweb{
+                position: absolute;
+                top: 320px;
+                left: 550px;
+            }
+            .foot_officialweb .foot_title{
+                padding-bottom: 32px;
+                position: relative;
+                left: -15px;
+            }
+            .foot_officialweb span{
+                margin-right: 30px;
+                cursor: pointer;
+            }
+            .foot_officialweb span:hover{
+                color: #31c27c;
+            }
+            .foot_copyright{
+                width: 1349px;
+                text-align: center;
+                position: absolute;
+                bottom: 1px;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+            .foot_copyright a{
+                margin: 0 2px;
+                cursor: pointer;
+            }
+            .foot_copyright a:hover{
+                color: #31c27c;
+            }
+            .popup{
+                position: fixed;
+                top: 164px;
+                right: 40px;
+                z-index: 1001;
+                text-align: center;
+                padding: 18px;
+                border-radius: 4px;
+                box-shadow: 0 3px 5px rgba(0,0,0,.07);
+                background-color: #fff;
+            }
+            .popup img{
+                margin: 0 auto 9px;
+                width: 102px;
+            }
+            .popup p{
+                margin:0 0 10px;
+                font-size: 16px;
+                color: #a6a6a6;
+            }
+            .popup a{
+                display: block;
+                margin: 0 auto;
+                width: 130px;
+                height: 26px;
+                border-radius: 13px;
+                line-height: 26px;
+                font-size: 15px;
+                color: #fff;
+                cursor: pointer;
+                text-align: center;
+                background-color: #31c27c;
+            }
+            .popup a:hover{
+                background-color: #2caf6f;
+            }
+            .popup a i{
+                display: inline-block;
+                width: 13px;
+                height: 14px;
+                margin-right: 4px;
+                background-position: -160px -320px;
+                background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
             }
         </style>
     </head>
@@ -250,7 +1686,985 @@
                     <a class="menu_top_btn_pay">开通付费包</a>
                 </div>
             </div>
-            <div class="menu_bottom"></div>
+            <div class="menu_bottom">
+                <ul>
+                    <li class="menu_bottom_current">首页</li>
+                    <li>歌手</li>
+                    <li>新碟</li>
+                    <li>排行榜</li>
+                    <li>分类歌单</li>
+                    <li>电台</li>
+                    <li>MV</li>
+                    <li>数字专辑</li>
+                    <li>票务</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_musiclist">
+                <div class="main_musiclist_inner">
+                    <h2 class="main_musiclist_title"></h2>
+                    <ul class="main_musiclist_index">
+                        <li class="main_musiclist_index_current">为你推荐</li>
+                        <li>经典国语</li>
+                        <li>网络歌曲</li>
+                        <li>KTV热歌</li>
+                        <li>官方歌单</li>
+                        <li>情歌</li>
+                    </ul>
+                    <ul class="main_musiclist_playlist">
+                        <li>
+                            <div>
+                                <img src="http://qpic.y.qq.com/music_cover/eEEgEM3HemUrFzxVvK50iab0Zic7JnpEnBVZ576CcQxDhXn8MbicJsbOg/300?n=1">
+                                <i class="main_musiclist_playlist_shadow"></i>
+                                <i class="main_musiclist_playlist_player"></i>
+                            </div>
+                            <p class="main_musiclist_playlist_name">
+                                不如跳舞？谈恋爱不如尬舞！
+                            </p>
+                            <p class="main_musiclist_playlist_count">
+                                播放量：6.7万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://qpic.y.qq.com/music_cover/qHVa7C6VF9SibnYtgb2SBrU5MAgfPxIg8G51jxPasck1fcoaNbvcLKw/300?n=1">
+                                <i class="main_musiclist_playlist_shadow"></i>
+                                <i class="main_musiclist_playlist_player"></i>
+                            </div>
+                            <p class="main_musiclist_playlist_name">
+                                世界很美好，请务必坚持下去
+                            </p>
+                            <p class="main_musiclist_playlist_count">
+                                播放量：12.3万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://qpic.y.qq.com/music_cover/KetjXWSVppvyrVJfzfdpib8IHrSyxErPribSv43A1eC1wTKV17qhUOicQ/300?n=1">
+                                <i class="main_musiclist_playlist_shadow"></i>
+                                <i class="main_musiclist_playlist_player"></i>
+                            </div>
+                            <p class="main_musiclist_playlist_name">
+                                原声吉他：悦耳的原味摇滚
+                            </p>
+                            <p class="main_musiclist_playlist_count">
+                                播放量：53.3万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://qpic.y.qq.com/music_cover/N7HVbcyvbfg4bwzMHRNerJDw50d5HwVVNN1ShBYnPcoLvkTrlpQThA/300?n=1">
+                                <i class="main_musiclist_playlist_shadow"></i>
+                                <i class="main_musiclist_playlist_player"></i>
+                            </div>
+                            <p class="main_musiclist_playlist_name">
+                                叫早神曲，口哨声唤醒沉睡的耳朵
+                            </p>
+                            <p class="main_musiclist_playlist_count">
+                                播放量：13.4万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://qpic.y.qq.com/music_cover/qH8rLHHhL8O8Iibm56uPzJ335dYF3gmAPc5Y7oicVYJNUTuaShXyvPwQ/300?n=1">
+                                <i class="main_musiclist_playlist_shadow"></i>
+                                <i class="main_musiclist_playlist_player"></i>
+                            </div>
+                            <p class="main_musiclist_playlist_name">
+                                元气满满！无法抗拒の日系少女音
+                            </p>
+                            <p class="main_musiclist_playlist_count">
+                                播放量：4.4万
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_musiclist_slide">
+                    <div class="main_musiclist_slide_left">
+                        <a class="main_musiclist_slide_left_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                    <div class="main_musiclist_slide_right">
+                        <a class="main_musiclist_slide_right_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_musiclist_shift">
+                    <a>
+                        <i></i>
+                    </a>
+                    <a>
+                        <i class="main_musiclist_shift_current"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="main_newmusic">
+                <div class="main_newmusic_inner">
+                    <h2 class="main_newmusic_title"></h2>
+                    <ul class="main_newmusic_index">
+                        <li class="main_newmusic_index_current">最新</li>
+                        <li>内地</li>
+                        <li>港台</li>
+                        <li>欧美</li>
+                        <li>韩国</li>
+                        <li>日本</li>
+                    </ul>
+                    <ul class="main_newmusic_musiclist">
+                        <li class="main_newmusic_musiclist_haveborder">
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000004EB4GB0ilnPr.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    HIGHEST IN THE ROOM
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    Travis Scott
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    02:55
+                                </span>
+                            </div>
+                        </li>
+                        <li class="main_newmusic_musiclist_haveborder">
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000002S9jO42HiqOT.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    我的中国心
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    肖战
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    03:12
+                                </span>
+                            </div>
+                        </li>
+                        <li class="main_newmusic_musiclist_haveborder">
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000000Rk6JS0KKIUJ.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    10,000 Hours
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    Dan + Shay / Justin Bieber
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    02:47
+                                </span>
+                            </div>
+                        </li>
+                        <li class="main_newmusic_musiclist_haveborder">
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000002nLT914F13dg.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    迷路在云端
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    萧煌奇 / A-Lin
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    05:03
+                                </span>
+                            </div>
+                        </li>
+                        <li class="main_newmusic_musiclist_haveborder">
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000000jmIhd2UNjng.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    循
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    双笙
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    04:56
+                                </span>
+                            </div>
+                        </li>
+                        <li class="main_newmusic_musiclist_haveborder">
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000000YVEdc3gwYeq.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    我和我的祖国（青春唱响曲）
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    欧豪 / 周冬雨 / 朱一龙 / 刘昊然
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    03:00
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000000YMnZM2QFjo7.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    海平面
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    童宇 / 蒋敦豪 / 苗一凡 / 周骏
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    03:42
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000000YMnZM2QFjo7.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    一掷
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    陈乐一 / 陆珂豪 / 小伍 / 阿圣 / 马万万
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    03:37
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_newmusic_musiclist_left">
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R90x90M000002Otwtl4GGggq.jpg?max_age=2592000">
+                                <i class="main_newmusic_musiclist_shadow"></i>
+                                <i class="main_newmusic_musiclist_player"></i>
+                            </div>
+                            <div class="main_newmusic_musiclist_right">
+                                <p class="main_newmusic_musiclist_musicname">
+                                    Cry for Me
+                                </p>
+                                <p class="main_newmusic_musiclist_musicauthor">
+                                    Camila Cabello
+                                </p>
+                                <span class="main_newmusic_musiclist_musictime">
+                                    03:09
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_newmusic_slide">
+                    <div class="main_newmusic_slide_left">
+                        <a class="main_newmusic_slide_left_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                    <div class="main_newmusic_slide_right">
+                        <a class="main_newmusic_slide_right_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_newmusic_shift">
+                    <a>
+                        <i class="main_newmusic_shift_current"></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                </div>
+                <a class="main_newmusic_allplay">
+                    <i></i>
+                    播放全部 
+                </a>
+            </div>
+            <div class="main_popular">
+                <div class="main_popular_inner">
+                    <h2 class="main_popular_title"></h2>
+                    <ul class="main_popular_list">
+                        <li>
+                            <img src="https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1755487.jpg?max_age=2592000">
+                        </li>
+                        <li>
+                            <img src="https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1763657.jpg?max_age=2592000">
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_popular_slide">
+                    <div class="main_popular_slide_left">
+                        <a class="main_popular_slide_left_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                    <div class="main_popular_slide_right">
+                        <a class="main_popular_slide_right_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_popular_shift">
+                    <a>
+                        <i class="main_popular_shift_current"></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+            <div class="main_newcd">
+                <div class="main_newcd_inner">
+                    <h2 class="main_newcd_title"></h2>
+                    <ul class="main_newcd_index">
+                        <li class="main_newcd_index_current">内地</li>
+                        <li>港台</li>
+                        <li>欧美</li>
+                        <li>韩国</li>
+                        <li>日本</li>
+                        <li>其它</li>
+                    </ul>
+                    <ul class="main_newcd_playlist">
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000YMnZM2QFjo7.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                一起乐队吧 第8期
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                一起乐队吧
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000004bH8Bk3VSeaR.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                沉默以后
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                蒋蒋
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M0000025akTu2l0Y6S.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                主角.You are the one
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                杨楚林
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000002sE5UQ0cSyoL.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                亲密旅行 电影原声带
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                胡小鸥
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000004TDANk4ERdQC.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                Yes I do
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                新声主义
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M0000008fpEX0mZ1EN.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                2019 YOUNG BLOOD新血计划月度歌单 Vol.6
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                华语群星
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000001lAf3d2Cy0fV.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                多少次想你
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                丛书
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000002klUby1F0Xic.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                雁门太守行
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                乐正龙牙
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000nKJFv0KDrDS.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                一不小心到古代
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                叶洛洛
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000Jxkur4Fr1m5.jpg?max_age=2592000">
+                                <i class="main_newcd_playlist_shadow"></i>
+                                <i class="main_newcd_playlist_player"></i>
+                            </div>
+                            <p class="main_newcd_playlist_name">
+                                Vientiane
+                            </p>
+                            <p class="main_newcd_playlist_author">
+                                羽梦落汐
+                            </p>
+                        </li>
+                    </ul>
+                    <a class="main_newcd_inner_more">
+                        更多
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+            <div class="main_rank">
+                <div class="main_rank_inner">
+                    <h2 class="main_rank_title"></h2>
+                    <ul class="main_rank_playlist">
+                        <li>
+                            <div class="main_rank_playlist_box">
+                                <div class="main_rank_playlist_box_back main_rank_playlist_box_back1"></div>
+                                <h3>
+                                    <i></i>
+                                    <p>流行指数</p>
+                                </h3>
+                                <i class="main_rank_playlist_line"></i>
+                                <i class="main_rank_playlist_player"></i>
+                                <ul class="main_rank_playlist_box_musiclist">
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">1</p>
+                                        <p>我和我的祖国</p>
+                                        <p>华语群星</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">2</p>
+                                        <p>暗示分离</p>
+                                        <p>en</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">3</p>
+                                        <p>我和我的祖国（青春唱...</p>
+                                        <p>欧豪/周冬雨/朱一龙/...</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_rank_playlist_box">
+                                <div class="main_rank_playlist_box_back main_rank_playlist_box_back2"></div>
+                                <h3>
+                                    <i></i>
+                                    <p>热歌</p>
+                                </h3>
+                                <i class="main_rank_playlist_line"></i>
+                                <i class="main_rank_playlist_player"></i>
+                                <ul class="main_rank_playlist_box_musiclist">
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">1</p>
+                                        <p>野狼disco</p>
+                                        <p>宝石Gem</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">2</p>
+                                        <p>那女孩对我说 (完整版)</p>
+                                        <p>uu</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">3</p>
+                                        <p>芒种</p>
+                                        <p>音阙诗听/赵方婧</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_rank_playlist_box">
+                                <div class="main_rank_playlist_box_back main_rank_playlist_box_back3"></div>
+                                <h3>
+                                    <i></i>
+                                    <p>新歌</p>
+                                </h3>
+                                <i class="main_rank_playlist_line"></i>
+                                <i class="main_rank_playlist_player"></i>
+                                <ul class="main_rank_playlist_box_musiclist">
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">1</p>
+                                        <p>说好不哭（with 五月...</p>
+                                        <p>周杰伦</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">2</p>
+                                        <p>你和我都没有错</p>
+                                        <p>都智文</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">3</p>
+                                        <p>病态</p>
+                                        <p>薛之谦</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_rank_playlist_box">
+                                <div class="main_rank_playlist_box_back main_rank_playlist_box_back4"></div>
+                                <h3>
+                                    <i></i>
+                                    <p>欧美</p>
+                                </h3>
+                                <i class="main_rank_playlist_line"></i>
+                                <i class="main_rank_playlist_player"></i>
+                                <ul class="main_rank_playlist_box_musiclist">
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">1</p>
+                                        <p>Sad Sometimes</p>
+                                        <p>Alan Walker/CORSAK...</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">2</p>
+                                        <p>Memories</p>
+                                        <p>Maroon 5</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">3</p>
+                                        <p>Cheating on You</p>
+                                        <p>Charlie Puth</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main_rank_playlist_box">
+                                <div class="main_rank_playlist_box_back main_rank_playlist_box_back5"></div>
+                                <h3>
+                                    <i></i>
+                                    <p>韩国</p>
+                                </h3>
+                                <i class="main_rank_playlist_line"></i>
+                                <i class="main_rank_playlist_player"></i>
+                                <ul class="main_rank_playlist_box_musiclist">
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">1</p>
+                                        <p>How can I love the he</p>
+                                        <p>악동뮤지션 (乐童音乐...</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">2</p>
+                                        <p>Feel Special</p>
+                                        <p>TWICE (트와이스)</p>
+                                    </li>
+                                    <li>
+                                        <p class="main_rank_playlist_box_musiclist_number">3</p>
+                                        <p>Chantey (뱃노래)</p>
+                                        <p>악동뮤지션 (乐童音乐...</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="main_rank_inner_more">
+                        更多
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+            <div class="main_mvlist">
+                <div class="main_mvlist_inner">
+                    <h2 class="main_mvlist_title"></h2>
+                    <ul class="main_mvlist_index">
+                        <li class="main_mvlist_index_current">精选</li>
+                        <li>内地</li>
+                        <li>韩国</li>
+                        <li>港台</li>
+                        <li>欧美</li>
+                        <li>日本</li>
+                    </ul>
+                    <ul class="main_mvlist_mvbox">
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="main_mvlist_mvbox">
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="https://y.gtimg.cn/music/photo_new/T015R640x360M101000CLOIo419pl4.jpg?max_age=2592000">
+                                <i class="main_mvlist_mvbox_shadow"></i>
+                                <i class="main_mvlist_mvbox_player"></i>
+                            </div>
+                            <p class="main_mvlist_mvbox_name">
+                                我的中国心
+                            </p>
+                            <p class="main_mvlist_mvbox_author">
+                                肖战
+                            </p>
+                            <p class="main_mvlist_mvbox_count">
+                                <i class="main_mvlist_mvbox_count_icon"></i>
+                                44.5万
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_mvlist_slide">
+                    <div class="main_mvlist_slide_left">
+                        <a class="main_mvlist_slide_left_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                    <div class="main_mvlist_slide_right">
+                        <a class="main_mvlist_slide_right_btn">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_mvlist_shift">
+                    <a>
+                        <i class="main_mvlist_shift_current"></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                    <a>
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot_download foot_box">
+                <p class="foot_title">下载QQ音乐客户端</p>
+                <ul class="foot_list foot_download_list">
+                    <li>
+                        <i class="foot_icon foot_download_icon_pc"></i>
+                        PC版
+                    </li>
+                    <li>
+                        <i class="foot_icon foot_download_icon_mac"></i>
+                        Mac版
+                    </li>
+                    <li>
+                        <i class="foot_icon foot_download_icon_android"></i>
+                        Android版
+                    </li>
+                    <li>
+                        <i class="foot_icon foot_download_icon_iphone"></i>
+                        iPhone版
+                    </li>
+                </ul>
+            </div>
+            <div class="foot_product foot_box">
+                <p class="foot_title">特色产品</p>
+                <ul class="foot_list foot_product_list">
+                    <li>
+                        <i class="foot_icon foot_product_icon_qmkg"></i>
+                        全民K歌
+                    </li>
+                    <li>
+                        <i class="foot_icon foot_product_icon_ss"></i>
+                        Super Sound
+                    </li>
+                    <li>
+                        <i class="foot_icon foot_product_icon_qplay"></i>
+                        Qplay
+                    </li>
+                </ul>
+                <span>车载互联</span>
+                <span>QQ演出</span>
+            </div>
+            <div class="foot_link foot_box">
+                <p class="foot_title">合作链接</p>
+                <p class="foot_link_inner">
+                    <span>CJ ENM</span>
+                    <span>腾讯视频</span>
+                    <span>手机QQ空间</span>
+                </p>
+                <p class="foot_link_inner">
+                    <span>最新版QQ</span>
+                    <span>腾讯社交广告</span>
+                    <span>电脑管家</span>
+                </p>
+                <p class="foot_link_inner">
+                    <span>QQ浏览器</span>
+                    <span>腾讯微云</span>
+                    <span>腾讯云</span>
+                </p>
+                <p class="foot_link_inner">
+                    <span>企鹅FM</span>
+                    <span>智能电视网</span>
+                    <span>当贝市场</span>
+                </p>
+            </div>
+            <div class="foot_platform">
+                <p class="foot_title">开放平台</p>
+                <span>腾讯音乐人</span>
+                <span>音乐号认证</span>
+            </div>
+            <div class="foot_officialweb">
+                <p class="foot_title">TME集团官网</p>
+                <span>腾讯音乐</span>
+            </div>
+            <div class="foot_copyright">
+                <p>
+                    <a>关于腾讯</a>|
+                    <a>About Tencent</a>|
+                    <a>服务条款</a>|
+                    <a>用户服务协议</a>|
+                    <a>隐私政策</a>|
+                    <a>权利声明</a>|
+                    <a>广告服务</a>|
+                    <a>腾讯招聘</a>|
+                    <a>客服中心</a>|
+                    <a>网站导航</a>
+                </p>
+                <p>
+                    Copyright © 1998 - 2019 Tencent.
+                    <a>All Rights Reserved.</a>
+                </p>
+                <p>
+                    腾讯公司
+                    <a>版权所有</a>
+                    <a>腾讯网络文化经营许可证</a>
+                </p>
+            </div>
+        </div>
+        <div class="popup">
+            <img src="http://imgcache.gtimg.cn/mediastyle/yqq/img/logo.png">
+            <p>千万高品质曲库尽享</p>
+            <a>
+                <i></i>
+                客户端下载
+            </a>
         </div>
     </body>
 </html>
