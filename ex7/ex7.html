@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QQ音乐小河淌水</title>
+        <style>
+          body{
+              background-color: #999;
+              padding: 10px 54px 0 10px;
+              font-size: 14px;
+              color: rgb(255, 255,255,.8);
+          }
+          .menu{
+              position: relative;
+          }
+          .menu img{
+              opacity: .3;
+              cursor: pointer;
+          }
+          .menu img:hover{
+              opacity: 1;
+          }
+          .menu div{
+              position: absolute;
+              right: 0;
+              top: 0;
+              font-size: 14px;
+              color: #fff;
+              text-align: center;
+          }
+          .menu div a{
+              display: inline-block;
+              width: 92px;
+              height: 28px;
+              line-height: 28px;
+              border-radius: 14px;
+              padding: 0 17px;
+              background-color: #31c27c;
+              margin: 0 6px;
+              cursor: pointer;
+          }
+          .menu div a:hover{
+              background-color: #2caf6f;
+          }
+          .menu div a i{
+              display: inline-block;
+              margin-right: 4px;
+              width: 13px;
+              height: 14px;
+              background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=85678e8f28c7b4bcad5c209b21b7e3b3&v=85678e8f28c7b4bcad5c209b21b7e3b3);
+              background-position: -160px -320px;
+              position: relative;
+              top: 3px;
+          }
+          .menu div span{
+              opacity: .3;
+              cursor: pointer;
+              margin-left: 10px;
+          }
+          .menu div span:hover{
+            opacity: 1;
+          }
+          .main_left_btn {
+              margin: 28px 0 0 85px;
+          }
+          .main_left_btn a{
+              display: inline-block;
+              width: 74px;
+              height: 36px;
+              line-height: 36px;
+              padding: 0 23px;
+              border: 1px solid #c9c9c9;
+              text-align: center;
+              margin-left: 3px;
+              cursor: pointer;
+          }
+          .main_left_btn a:hover{
+            border: 1px solid #fff;
+            color: #fff;
+          }
+          .main_left_btn a i{
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png);
+              background-repeat: no-repeat;
+              opacity: .6;
+              position: relative;
+              top: 3px;
+              right: 5px;
+          }
+          .main_left_btn_like i{
+              background-position: -60px -20px;
+          }
+          .main_left_btn_add i{
+              background-position: -20px -20px;
+          }
+          .main_left_btn_download i{
+              background-position: -40px -240px;
+          }
+          .main_left_btn_delete i{
+              background-position: -100px -20px;
+          }
+          .main_left_btn_alldelete i{
+              background-position: -40px -300px;
+          }
+          .main_left_btn a:hover i{
+              opacity: 1;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <img src="https://y.gtimg.cn/mediastyle/yqq/img/player_logo.png">
+            <div>
+                QQ音乐，千万高品质曲库尽享 
+                <a>
+                    <i></i>
+                    客户端下载
+                </a>
+                <span>登录</span>
+                <span>设置</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_left">
+                <div class="main_left_btn">
+                    <a class="main_left_btn_like">
+                        <i></i>收藏
+                    </a>
+                    <a class="main_left_btn_add">
+                        <i></i>添加到
+                    </a>
+                    <a class="main_left_btn_download">
+                        <i></i>下载
+                    </a>
+                    <a class="main_left_btn_delete">
+                        <i></i>删除
+                    </a>
+                    <a class="main_left_btn_alldelete">
+                        <i></i>清空列表
+                    </a>
+                </div>
+                <div class="main_left_list main_left_title">
+                    <a></a>
+                </div>
+                <div class="main_left_list main_left_inner"></div>
+            </div>
+            <div class="main_right"></div>
+        </div>
+    </body>
+</html>
