@@ -4,7 +4,7 @@
         <title>QQ音乐小河淌水</title>
         <style>
           body{
-              background-color: #999;
+              background-color: #666;
               padding: 10px 54px 0 10px;
               font-size: 14px;
               color: rgb(255, 255,255,.8);
@@ -59,6 +59,10 @@
           .menu div span:hover{
             opacity: 1;
           }
+          .main_left{
+              display: inline-block;
+              position: absolute;
+          }
           .main_left_btn {
               margin: 28px 0 0 85px;
           }
@@ -106,6 +110,262 @@
           .main_left_btn a:hover i{
               opacity: 1;
           }
+          .main_left_list{
+              margin:35px 0 0 88px;
+          }
+          .main_left_list span{
+              display: inline-block;
+              width: 80px;
+              cursor: default;
+          }
+          .main_left_list a{
+              display: inline-block;
+              position: relative;
+              top: 2px;
+              width: 12px;
+              height: 12px;
+              border: 1px solid #c9c9c9;
+          }
+          .main_left_list a:hover{
+            border: 1px solid #fff;
+          }
+          .music_name{
+              margin: 0 170px 0 38px;
+          }
+          .music_singer{
+              margin: 0 10px 0 142px;
+          }
+          .music_time{
+              margin: 0 10px 0 70px;
+          }
+          .main_left_inner{
+              height: 50px;
+              position: relative;
+          }
+          .main_left_inner .music_singer:hover{
+              color: #fff;
+              cursor: pointer;
+          }
+          .main_left_inner:hover .music_time{
+              opacity: 0;
+          }
+          .main_left_inner i{
+              display: none;
+              width: 36px;
+              height: 36px;
+              background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_list_menu.png?max_age=2592000&v=7f156ebd3cc15abf79d536631818d0e0&v=7f156ebd3cc15abf79d536631818d0e0);
+              background-repeat: no-repeat;
+              position: absolute;
+              cursor: pointer;
+          }
+          .main_left_inner div{
+              display: inline-block;
+              position: absolute;
+              left: 42px;
+              cursor: default;
+          }
+          .main_left_inner:hover .main_left_inner_btn_play{
+              display: inline-block;
+              background-position: -80px 0;
+              top: -10px;
+              left: 298px;
+          }
+          .main_left_inner .main_left_inner_btn_play:hover{
+              background-position: -120px 0;
+          }
+          .main_left_inner:hover .main_left_inner_btn_add{
+              display: inline-block;
+              background-position: -80px -80px;
+              top: -10px;
+              left: 348px;
+          }
+          .main_left_inner .main_left_inner_btn_add:hover{
+              background-position: -120px -80px;
+          }
+          .main_left_inner:hover .main_left_inner_btn_share{
+              display: inline-block;
+              background-position: -80px -40px;
+              top: -10px;
+              left: 395px;
+          }
+          .main_left_inner .main_left_inner_btn_share:hover{
+              background-position: -120px -40px;
+          }
+          .main_left_inner:hover .main_left_inner_btn_delete{
+              display: inline-block;
+              background-position: -80px -160px;
+              top: -10px;
+              left: 615px;
+          }
+          .main_left_inner .main_left_inner_btn_delete:hover{
+              background-position: -120px -160px;
+          }
+          .main_right{
+              display: inline-block;
+              position: absolute;
+              top: 72px;
+              right: 158px;
+          }
+          .main_right img{
+              width: 186px;
+              height: 186px;
+              margin-bottom: 10px;
+          }
+          .main_right div{
+              margin-bottom: 8px;
+              text-align: center;
+          }
+          .main_right div span{
+              cursor: default;
+          }
+          .main_right .main_right_music_right{
+              cursor: pointer;
+              margin-left: 5px;
+          }
+          .main_right .main_right_music_right:hover{
+              color: #fff;
+          }
+          .main_right_music_lyrics{
+              margin-top: 50px;
+              cursor: pointer;
+          }
+          .console{
+              position: absolute;
+              bottom: 50px;
+          }
+          .console div{
+              display: inline-block;
+          }
+          .console a{
+              display: inline-block;
+              position: absolute;
+              background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/player.png?max_age=2592000&v=f051617d8e8291de481d89af94f0cdbd&v=f051617d8e8291de481d89af94f0cdbd);
+              background-repeat: no-repeat;
+              opacity: 0.8;
+              cursor: pointer;
+          }
+          .console a:hover{
+              opacity: 1;
+          }
+          .console_btn_prev{
+              width: 19px;
+              height: 20px;
+              background-position: 0 -30px;
+              top: 1px;
+              left: 82px;
+          }
+          .console_btn_play{
+              width: 21px;
+              height: 29px;
+              background-position: 0 0px;
+              top: -5px;
+              left: 150px;
+          }
+          .console_btn_next{
+              width: 19px;
+              height: 20px;
+              background-position: 0 -52px;
+              top: 1px;
+              left: 215px;
+          }
+          .console_player{
+              position: absolute;
+              top: -3px;
+              left: 290px;
+              width: 501px;
+          }
+          .console_player_info{
+              width: 150px;
+              margin-right: 260px;
+          }
+          .console_player_info span{
+            cursor: pointer;
+          }
+          .console_player_info span:hover{
+              color: #fff;
+          }
+          .console_player_progress{
+              height: 2px;
+              width: 500px;
+              position: relative;
+              top: -5px;
+              background-color: #fff;
+              opacity: .3;
+              cursor: pointer;
+          }
+          .console_btn_loop{
+              width: 26px;
+              height: 25px;
+              background-position: 0 -205px;
+              top: 1px;
+              left: 837px;
+          }
+          .console_btn_like{
+              width: 23px;
+              height: 21px;
+              background-position: 0 -96px;
+              top: 1px;
+              left: 885px;
+          }
+          .console_btn_download{
+              width: 22px;
+              height: 21px;
+              background-position: 0 -120px;
+              top: 1px;
+              left: 933px;
+          }
+          .console_btn_comment{
+              width: 24px;
+              height: 24px;
+              background-position: 0 -400px;
+              top: 1px;
+              left: 982px;
+          }
+          .console .console_btn_comment:hover{
+            background-position: 0 -460px;
+            top: 0px;
+          }
+          .console_btn_only{
+              width: 74px;
+              height: 26px;
+              background-position: 0 -282px;
+              top: 1px;
+              left: 1035px;
+          }
+          .console_btn_voice{
+              width: 26px;
+              height: 21px;
+              background-position: 0 -144px;
+              top: 1px;
+              left: 1132px;
+          }
+          .console_voice_progress{
+              height: 2px;
+              width: 75px;
+              position: absolute;
+              top: 10px;
+              left: 1162px;
+              background-color: #fff;
+              opacity: 1;
+              cursor: pointer;
+          }
+          .console i{
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              border-radius: 15px;
+              position: absolute;
+              background-color: #fff;
+              cursor: pointer;
+          }
+          .console_player i{
+              top: 23px;
+              left: -8px;
+          }
+          .console_voice i{
+              top: -4px;
+              left: 72px;
+          }
         </style>
     </head>
     <body>
@@ -121,31 +381,85 @@
                 <span>设置</span>
             </div>
         </div>
-        <div class="main">
-            <div class="main_left">
-                <div class="main_left_btn">
-                    <a class="main_left_btn_like">
-                        <i></i>收藏
-                    </a>
-                    <a class="main_left_btn_add">
-                        <i></i>添加到
-                    </a>
-                    <a class="main_left_btn_download">
-                        <i></i>下载
-                    </a>
-                    <a class="main_left_btn_delete">
-                        <i></i>删除
-                    </a>
-                    <a class="main_left_btn_alldelete">
-                        <i></i>清空列表
-                    </a>
-                </div>
-                <div class="main_left_list main_left_title">
-                    <a></a>
-                </div>
-                <div class="main_left_list main_left_inner"></div>
+        <div class="main_left">
+            <div class="main_left_btn">
+                <a class="main_left_btn_like">
+                    <i></i>收藏
+                </a>
+                <a class="main_left_btn_add">
+                    <i></i>添加到
+                </a>
+                <a class="main_left_btn_download">
+                    <i></i>下载
+                </a>
+                <a class="main_left_btn_delete">
+                    <i></i>删除
+                </a>
+                <a class="main_left_btn_alldelete">
+                    <i></i>清空列表
+                </a>
             </div>
-            <div class="main_right"></div>
+            <div class="main_left_list main_left_title">
+                <a></a>
+                <span class="music_name">歌曲</span>
+                <span class="music_singer">歌手</span>
+                <span class="music_time">时长</span>
+            </div>
+            <div class="main_left_list main_left_inner">
+                <a></a>
+                <span class="music_name">小河淌水</span>
+                <span class="music_singer">龚琳娜</span>
+                <span class="music_time">04:11</span>
+                <i class="main_left_inner_btn_play"></i>
+                <i class="main_left_inner_btn_add"></i>
+                <i class="main_left_inner_btn_share"></i>
+                <i class="main_left_inner_btn_delete"></i>
+                <div>1</div>
+            </div>
+        </div>
+        <div class="main_right">
+            <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M0000045ywA80A8Zta.jpg?max_age=2592000">
+            <div class="main_right_musicname">
+                <span class="main_right_music_left">歌曲名:</span>
+                <span class="main_right_music_right">小河淌水</span>
+            </div>
+            <div class="main_right_musicsingle">
+                <span class="main_right_music_left">歌手名:</span>
+                <span class="main_right_music_right">龚琳娜</span>
+            </div>
+            <div class="main_right_musicalbum">
+                <span class="main_right_music_left">专辑名:</span>
+                <span class="main_right_music_right">小河淌水</span>
+            </div>
+            <div class="main_right_music_lyrics">
+                <p>叫阿哥</p>
+                <p>月亮出来亮旺旺</p>
+                <p>亮旺旺</p>
+            </div>
+        </div>
+        <div class="console">
+            <a class="console_btn_prev"></a>
+            <a class="console_btn_play"></a>
+            <a class="console_btn_next"></a>
+            <div class="console_player">
+                <div class="console_player_info">
+                    <span>小河淌水 </span>-<span> 龚琳娜</span>
+                </div>
+                <div class="console_player_time">00:02 / 04:11</div>
+                <div class="console_player_progress"></div>
+                <i></i>
+            </div>
+            <a class="console_btn_loop"></a>
+            <a class="console_btn_like"></a>
+            <a class="console_btn_download"></a>
+            <a class="console_btn_comment"></a>
+            <a class="console_btn_only"></a>
+            <a class="console_btn_voice"></a>
+            <div class="console_voice">
+                <div class="console_voice_progress">
+                    <i></i>
+                </div>
+            </div>
         </div>
     </body>
 </html>
